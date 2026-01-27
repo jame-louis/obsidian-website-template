@@ -41,3 +41,7 @@ defaults:
     values:
       layout: "post"
       comments: true
+
+wikilinks:                                                                                                                                                            
+  strip_extension: true                                                                                                                                               
+  base_url: /obsidian-website-template 
