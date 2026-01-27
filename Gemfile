@@ -9,4 +9,4 @@ group :jekyll_plugins do
 end
 
 # Theme dependency
-gem "minima", "~> 3.0"
+gem "minima", "~> 2.5"
