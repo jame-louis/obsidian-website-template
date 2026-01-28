@@ -1,10 +1,4 @@
 ---
-layout: default
-title: "Open Course Website Template"
----
-
-    <section class="hero">
----
 layout: course-page
 title: "主页"
 permalink: /
