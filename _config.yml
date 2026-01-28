@@ -4,7 +4,7 @@ email: instructor@example.com
 description: >-
   A customizable Jekyll-based course website template for educators.
   Perfect for hosting course materials, lectures, assignments, and projects.
-baseurl: "/course-website" # the subpath of your site, e.g. /blog
+baseurl: "/obsidian-website-template" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Course settings
