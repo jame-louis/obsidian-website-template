@@ -1,47 +1,41 @@
-title: "[Course Title]"
-course_code: "[CS XXXX]"
-semester: "Spring 2026"
+title: "[课程名称]"
+course_code: "[课程代码]"
+semester: "[学期 - 例如：春季 2026]"
 year: 2026
-institution: "[Your University]"
-department: "[Department Name]"
+institution: "[学校名称]"
+department: "[系别名称]"
 credits: 3
-level: "Intermediate"
+level: "中级"
 
 instructor:
-  name: "Dr. [Your Name]"
+  name: "[授课教师姓名]"
   email: "instructor@example.com"
-  office: "[Building Name], Room [###]"
-  office_hours: "[Days and Times]"
-  bio: "Dr. [Name] has [X] years of experience in [subject area]."
+  office: "[办公地点，房间号]"
+  office_hours: "[办公时间，例如：周二 14:00-16:00]"
+  bio: "[教师简介：简短介绍教学或研究背景]"
 
 meeting:
-  days: "Monday, Wednesday, Friday"
-  time: "10:00 AM - 11:15 AM"
-  location: "[Building Name], Room [###]"
+  days: "[上课日，例如：周一、周三、周五]"
+  time: "[上课时间，例如：10:00 - 11:15]"
+  location: "[上课地点，例如：教学楼 XX 室]"
   duration_minutes: 75
 
 description: >-
-  [Add your course description here. This should provide a brief overview of the course
-  topic, main concepts covered, and learning approach. Students will learn about [key topics]
-  and apply their knowledge through [assignments/projects/labs]. The course culminates in
-  [final project description].]
+  [在此填写课程简介。概述课程内容、核心概念与教学方式。学生将学习[主要主题]，并通过作业/项目将理论应用于实践。]
 
 learning_outcomes:
-  - "[Student will be able to: describe specific learning outcome 1]"
-  - "[Student will be able to: describe specific learning outcome 2]"
-  - "[Student will be able to: describe specific learning outcome 3]"
-  - "[Student will be able to: describe specific learning outcome 4]"
-  - "[Student will be able to: describe specific learning outcome 5]"
-  - "[Student will be able to: describe specific learning outcome 6]"
-  - "[Student will be able to: describe specific learning outcome 7]"
+  - "[学生将能够：掌握具体技能或概念 1]"
+  - "[学生将能够：掌握具体技能或概念 2]"
+  - "[学生将能够：掌握具体技能或概念 3]"
+  - "[学生将能够：掌握具体技能或概念 4]"
+  - "[学生将能够：完成具体交付物 1]"
 
 prerequisites:
-  - "[Prerequisite Course 1 (Course Code)]"
-  - "[Prerequisite Course 2 (Course Code)]"
-  - "[Prerequisite Course 3 (Course Code)]"
+  - "[先修课程 1（课程代码）或 '无']"
+  - "[先修课程 2（课程代码）]"
 
 textbook: null
-textbook_note: "Course materials are [freely available online / provided in course / to be announced]."
+textbook_note: "[教材信息或说明：例如：课程材料在线提供/待定]"
 
 grading:
   participation: 5
@@ -55,28 +49,28 @@ grading_scale:
   B: "80-89"
   C: "70-79"
   D: "60-69"
-  F: "Below 60"
+  F: "低于 60"
 
 policies:
-  - title: "Attendance"
-    content: "Attendance is mandatory. More than 3 unexcused absences will impact your grade."
-  - title: "Late Work"
-    content: "Assignments submitted late will receive a 10% penalty per day, up to 5 days maximum."
-  - title: "Academic Integrity"
-    content: "All work must be your own. Plagiarism or cheating will result in failure of the course."
-  - title: "Accessibility"
-    content: "Students with disabilities should contact the disability services office for accommodations."
+  - title: "出勤"
+    content: "请参见课程大纲。超过规定缺勤次数会影响成绩。"
+  - title: "迟交作业"
+    content: "迟交作业通常会按天扣分（例如每日 10%），具体规则见课程大纲。"
+  - title: "学术诚信"
+    content: "所有提交的作业须为本人原创，抄袭将依学校规定处理。"
+  - title: "无障碍服务"
+    content: "需要特殊辅助的同学请联系学校无障碍服务办公室，并告知授课教师以便安排。"
 
 required_software:
-  - name: "[Software Name 1]"
-    version: "[Version requirement]"
-    link: "[Link to download]"
-    cost: "[Cost information]"
-  - name: "[Software Name 2]"
-    version: "[Version requirement]"
-    link: "[Link to download]"
-    cost: "[Cost information]"
-  - name: "[Software Name 3]"
-    version: "[Version requirement]"
-    link: "[Link to download]"
-    cost: "[Cost information]"
+  - name: "[软件名称 1]"
+    version: "[版本要求]"
+    link: "[下载链接]"
+    cost: "[费用说明，例如：免费 / 需要付费]"
+  - name: "[软件名称 2]"
+    version: "[版本要求]"
+    link: "[下载链接]"
+    cost: "[费用说明]"
+  - name: "[软件名称 3]"
+    version: "[版本要求]"
+    link: "[下载链接]"
+    cost: "[费用说明]"

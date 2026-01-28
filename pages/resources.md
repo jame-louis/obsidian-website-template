@@ -4,170 +4,120 @@ title: "Resources"
 permalink: /pages/resources/
 ---
 
-## Course Resources
+---
+layout: course-page
+title: "资源"
+permalink: /pages/resources/
+---
 
-This page contains links to tools, documentation, and other resources useful for this course. Customize these links for your specific course content.
+## 课程资源
+
+此页列出课程常用工具、文档与参考资料。请根据课程内容将占位符替换为具体中文资源或包含中文说明的链接。
 
 ---
 
-## Development Tools
+## 开发与工具
 
-### Required Software
-- **[Tool Name 1]:** [Link to tool](https://example.com) - [Brief description of purpose]
-- **[Tool Name 2]:** [Link to tool](https://example.com) - [Brief description of purpose]
-- **[Tool Name 3]:** [Link to tool](https://example.com) - [Brief description of purpose]
+### 必需软件
+- **[软件名称 1]：** [下载链接] - [用途说明]
+- **[软件名称 2]：** [下载链接] - [用途说明]
+- **[软件名称 3]：** [下载链接] - [用途说明]
 
-### Optional Software
-- **[Tool Name 4]:** [Link to tool](https://example.com) - [Useful for advanced topics]
-- **[Tool Name 5]:** [Link to tool](https://example.com) - [Useful for projects]
+### 可选软件
+- **[软件名称 4]：** [下载链接] - [适用于进阶主题]
+- **[软件名称 5]：** [下载链接] - [适用于课程项目]
 
-### Version Control
-- **Git:** [Official Git Website](https://git-scm.com)
-- **GitHub:** [GitHub](https://github.com)
-- **Documentation:** [GitHub Guides](https://guides.github.com)
-
----
-
-## Official Documentation
-
-### Primary Learning Resources
-- **[Topic 1 Documentation]:** [Link](https://example.com)
-- **[Topic 2 Documentation]:** [Link](https://example.com)
-- **[Topic 3 Documentation]:** [Link](https://example.com)
-- **[Topic 4 API Reference]:** [Link](https://example.com)
-
-### Sample Code & Tutorials
-- **[Framework Samples]:** [Link](https://example.com)
-- **[Learning Tutorials]:** [Link](https://example.com)
-- **[Code Examples Repository]:** [Link](https://example.com)
+### 版本控制
+- **Git：** [官方站点](https://git-scm.com)
+- **GitHub：** [GitHub](https://github.com)
 
 ---
 
-## Libraries & Frameworks
+## 官方文档与教程
 
-### Core Libraries
-- **[Library 1]:** [Documentation Link](https://example.com) - [Purpose/use case]
-- **[Library 2]:** [Documentation Link](https://example.com) - [Purpose/use case]
-- **[Library 3]:** [Documentation Link](https://example.com) - [Purpose/use case]
-
-### Utility Libraries
-- **[Library 4]:** [Link](https://example.com) - [Purpose/use case]
-- **[Library 5]:** [Link](https://example.com) - [Purpose/use case]
-
-### Design & UI
-- **[Design System]:** [Link](https://example.com) - [Design patterns and guidelines]
-- **[Icon Library]:** [Link](https://example.com) - [Icons and graphics]
-- **[Component Library]:** [Link](https://example.com) - [Reusable UI components]
+- **[主题 1 文档]：** [链接]
+- **[主题 2 文档]：** [链接]
+- **示例代码与教程：** [代码仓库或教程链接]
 
 ---
 
-## Testing & Debugging
+## 库与框架（示例占位）
 
-### Testing Frameworks
-- **[Testing Framework 1]:** [Documentation](https://example.com)
-- **[Testing Framework 2]:** [Documentation](https://example.com)
-- **[Mocking Library]:** [Documentation](https://example.com)
-
-### Debugging & Development Tools
-- **[Debugging Tool 1]:** [Documentation](https://example.com)
-- **[Profiling Tool]:** [Documentation](https://example.com)
-- **[Performance Analysis]:** [Documentation](https://example.com)
+- **[核心库 1]：** [文档链接] - [用途]
+- **[核心库 2]：** [文档链接] - [用途]
 
 ---
 
-## APIs & Services
+## 测试与调试
 
-### Course-Specific APIs
-- **[API 1]:** [Documentation](https://example.com) - [Use case in course]
-- **[API 2]:** [Documentation](https://example.com) - [Use case in course]
-- **[API 3]:** [Documentation](https://example.com) - [Use case in course]
-
-### Public APIs for Practice
-- **[Public API 1]:** [Documentation](https://example.com)
-- **[Public API 2]:** [Documentation](https://example.com)
-- **[Sandbox/Testing API]:** [Documentation](https://example.com)
+- **[测试框架]：** [文档链接]
+- **[调试工具]：** [文档链接]
 
 ---
 
-## Learning Resources
+## API 与服务
 
-### Online Courses & Tutorials
-- **[Course Platform 1]:** [Link to course](https://example.com)
-- **[Tutorial Series]:** [Link](https://example.com)
-- **[Interactive Learning]:** [Link](https://example.com)
+### 课程相关 API
+- **[API 1]：** [文档] - [在课程中的用途]
 
-### Video Learning
-- **[Official Channel]:** [Link](https://www.youtube.com)
-- **[Tutorial Playlist]:** [Link](https://www.youtube.com)
-- **[Conference Talks]:** [Link](https://example.com)
-
-### Recommended Books & Articles
-- "[Book Title 1]" - [Author/Publisher]
-- "[Book Title 2]" - [Author/Publisher]
-- "[Key Article/Paper]" - [Link](https://example.com)
+### 可用于练习的公共 API
+- **[公共 API 1]：** [文档]
 
 ---
 
-## Design Resources
+## 学习资源
 
-### Design Systems & Guidelines
-- **[Design System Name]:** [Link](https://example.com)
-- **[Style Guide]:** [Link](https://example.com)
-- **[Design Pattern Library]:** [Link](https://example.com)
+### 在线课程与教程
+- **[平台/课程]：** [链接]
+- **[系列教程]：** [链接]
 
-### Design Tools
-- **[Design Tool 1]:** [Link](https://example.com) - UI/UX Design
-- **[Design Tool 2]:** [Link](https://example.com)
-- **[Prototyping Tool]:** [Link](https://example.com)
+### 视频学习
+- **[官方频道/播放列表]：** [链接]
 
----
-
-## Deployment & Distribution
-
-### Deployment Platforms
-- **[Platform 1]:** [Link](https://example.com) - [How to deploy projects]
-- **[Platform 2]:** [Link](https://example.com) - [How to deploy projects]
-
-### Documentation
-- **[Deployment Guide]:** [Link](https://example.com)
-- **[Best Practices]:** [Link](https://example.com)
+### 推荐书籍与文章
+- 《[书名 1]》 - [作者]
+- 《[书名 2]》 - [作者]
 
 ---
 
-## Community & Support
+## 设计资源
 
-### Official Community
-- **[Official Forum/Discussion]:** [Link](https://example.com)
-- **[Official Chat/Discord]:** [Link](https://example.com)
-
-### General Community Resources
-- **Stack Overflow:** [Search for your topic](https://stackoverflow.com)
-- **[Subreddit/Community]:** [Link](https://reddit.com)
-- **[Discussion Forum]:** [Link](https://example.com)
-
-### Getting Help
-- See [Course Syllabus]({{ '/pages/syllabus/' | relative_url }}) for office hours
-- Email: {{ site.data.course-info.instructor.email }}
-- Check [FAQ]({{ '/pages/faq/' | relative_url }}) for common questions
+- **[设计系统或风格指南]：** [链接]
+- **[图标库]：** [链接]
 
 ---
 
-## Tips for Using These Resources
+## 部署与发布
 
-1. **Start with Official Documentation** - Official docs are the most accurate and up-to-date
-2. **Use Multiple Sources** - Combine tutorials, documentation, and examples for better understanding
-3. **Practice with Code** - Don't just read; write code using these resources
-4. **Join Communities** - Ask questions and learn from peers
-5. **Bookmark Frequently Used Links** - Keep a personal list of your most useful resources
+- **[部署平台]：** [链接] - [如何部署项目]
+- **[部署指南]：** [链接]
 
 ---
 
-**How to Customize This Page:**
+## 社区与支持
 
-1. Replace `[Tool Name X]` with actual tools used in your course
-2. Update all links to point to real resources
-3. Organize sections based on your course topics
-4. Add course-specific resources in each section
-5. Keep the page up-to-date as resources change
+- **Stack Overflow：** [搜索问题](https://stackoverflow.com)
+- **社区论坛/讨论区：** [链接]
 
-**Last Updated:** January 28, 2026
+如需帮助：
+- 查看课程大纲获取办公时间信息
+- 邮箱联系：{{ site.data.course-info.instructor.email }}
+- 查看常见问题： [FAQ]({{ '/pages/faq/' | relative_url }})
+
+---
+
+## 使用建议
+
+1. 优先阅读官方文档
+2. 结合教程与示例代码进行实践
+3. 多问多练，并加入社区交流
+
+---
+
+**如何定制本页：**
+
+1. 将 `[软件名称 X]` 替换为课程实际使用的软件
+2. 将占位链接替换为具体资源链接
+3. 根据课程主题组织资源分类
+
+**最后更新：** 2026-01-28

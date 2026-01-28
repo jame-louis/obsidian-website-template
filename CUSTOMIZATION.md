@@ -1,322 +1,160 @@
-# Customization Guide
+title: "[Lecture Title]"
+date: 2026-01-27
+title: "[Assignment Name]"
+due_date: 2026-02-05
+title: "[Project Name]"
+due_date: 2026-03-15
+group: true  # or false for individual projects
+# 自定义指南
 
-This is a **generic open course website template** built with Jekyll. You can customize it for any course by updating the configuration and content files.
+本指南说明如何将本模板定制为适用于中文教学的课程网站。
 
-## Quick Start
+## 快速开始
 
-1. **Fork or clone this repository**
-2. **Update the configuration files** (see sections below)
-3. **Build and preview** with `bundle exec jekyll serve`
-4. **Deploy to GitHub Pages** or your own server
+1. Fork 或 clone 本仓库
+2. 修改配置文件（参见下文）
+3. 使用 `bundle exec jekyll serve` 本地预览
+4. 部署到 GitHub Pages 或托管服务器
 
 ---
 
-## Configuration Files to Customize
+## 需要定制的配置文件
 
-### 1. `_config.yml` - Site-Wide Settings
+### 1. `_config.yml` - 站点配置
 
-This file contains your site title, course name, and Jekyll configuration.
+在此设置站点标题、课程名等全局配置：
 
-**Required changes:**
 ```yaml
-title: "[Your Course Title]"              # Site title
+title: "[课程标题]"
 course:
-  name: "[Your Course Name]"              # Course name
-  code: "[CS XXXX]"                       # Course code
+  name: "[课程名称]"
+  code: "[课程代码]"
 ```
 
-**Optional changes:**
-- `description`: Brief course description
-- `url`: Your website URL (for GitHub Pages, use `https://username.github.io/repository-name`)
-- `baseurl`: Repository name if hosting on GitHub Pages
+### 2. `_data/course-info.yml` - 课程元数据
 
-### 2. `_data/course-info.yml` - Course Metadata
+此文件包含课程大纲页面使用的全部课程信息（教师、学期、学习目标等）。请务必用中文填写：
 
-This file contains all course details shown on the syllabus and other pages.
+示例：
 
-**Essential information to update:**
 ```yaml
-title: "[Your Course Title]"
-course_code: "[CS XXXX]"
-institution: "[Your University]"
-department: "[Your Department]"
-semester: "[Semester, Year]"
-start_date: "[YYYY-MM-DD]"
-end_date: "[YYYY-MM-DD]"
-```
-
-**Instructor information:**
-```yaml
+title: "计算机导论"
+course_code: "CS101"
+institution: "某某大学"
 instructor:
-  name: "[Instructor Name]"
-  email: "[instructor@email.com]"
-  office: "[Building Room #]"
-  office_hours: "[Days and times]"
+  name: "张三"
+  email: "zhangsan@university.edu"
 ```
 
-**Course description:**
-```yaml
-description: "[Your detailed course description]"
-```
+### 3. `_data/schedule.yml` - 课程日程
 
-**Learning outcomes:**
-```yaml
-learning_outcomes:
-  - "[Student will be able to: specific skill 1]"
-  - "[Student will understand: specific concept 1]"
-  - "[Student will create: specific deliverable 1]"
-  - # ... add more outcomes
-```
+定义逐周教学安排：
 
-**Prerequisites and requirements:**
-```yaml
-prerequisites: "[List prerequisites or 'None']"
-required_software:
-  - name: "[Tool Name]"
-    version: "[Version requirement]"
-    download_url: "[Link to download]"
-```
-
-**Grading breakdown:**
-```yaml
-grading:
-  participation: 5
-  homework: 15
-  assignments: 20
-  projects: 40
-  final: 20
-  # Total should equal 100
-```
-
-### 3. `_data/schedule.yml` - Course Schedule
-
-This file defines your week-by-week course schedule.
-
-**Basic structure:**
 ```yaml
 semester_start: "[YYYY-MM-DD]"
 semester_end: "[YYYY-MM-DD]"
-total_weeks: 16  # Change to your course length
+total_weeks: 16
 
 weeks:
   - week: 1
-    title: "[Week 1 Title]"
+    title: "[第1周：课程介绍]"
     start_date: "[YYYY-MM-DD]"
     end_date: "[YYYY-MM-DD]"
     topics:
-      - "[Topic 1]"
-      - "[Topic 2]"
-    learning_objectives:
-      - "[What students will learn]"
-    lectures:
-      - "week-01-lecture-01"  # Match lecture file names
-    assignments:
-      - "assignment-01"
-    projects:
-      - "project-01-name"
-    milestone: false  # Set to true for major deadlines
+      - "[主题1]"
+      - "[主题2]"
 ```
 
-**Tips:**
-- Create a week block for each week of your course
-- Use consistent naming for lectures, assignments, and projects
-- Reference files that you'll create in `_lectures/`, `_assignments/`, `_projects/` folders
+### 4. `_data/announcements.yml` - 公告
 
-### 4. `_data/announcements.yml` - Course Announcements
-
-Update with your course start date, important deadlines, and key dates.
-
-```yaml
-announcements:
-  - date: "[YYYY-MM-DD]"
-    title: "[Announcement Title]"
-    content: "[Announcement text]"
-    type: "important"  # or "reminder", "update"
-    urgency: "high"    # or "medium", "low"
-
-important_dates:
-  - date: "[YYYY-MM-DD]"
-    title: "[Event name - e.g., Midterm Exam]"
-```
-
-### 5. `_data/nav.yml` - Navigation Menu
-
-Update navigation links if you add new pages or sections.
-
-```yaml
-main:
-  - text: "[Menu Item]"
-    url: "/pages/[your-page]/"
-```
+在此添加课程重要通知和关键日期，内容请使用中文。
 
 ---
 
-## Content Files to Customize
+## 页面内容定制
 
-### 1. Homepage (`pages/index.md`)
+### 首页 `pages/index.md`
 
-Update the hero section and course description:
+编辑首页的英雄区、课程简介及快速链接，确保中文表述清晰。
 
-```markdown
-# [Your Course Title]
+### 教学大纲 `pages/syllabus.md`
 
-[Your course tagline - e.g., "Learn web development from fundamentals to deployment"]
+教学大纲会自动读取 `_data/course-info.yml`，你也可以在此页添加详细政策（出勤、迟交、学术诚信等），请用中文撰写。
 
-## Course Description
-[Your course description explaining what students will learn]
-```
+### 日程页 `pages/schedule.md`
 
-### 2. Syllabus (`pages/syllabus.md`)
+自动生成自 `_data/schedule.yml`，修改日程文件即可更新页面。
 
-The syllabus automatically pulls from `_data/course-info.yml`, but you can add:
-- Course policies (attendance, late work, academic integrity)
-- Grading scale
-- Required textbooks
-- Course communication expectations
+### 资源页 `pages/resources.md`
 
-### 3. Schedule (`pages/schedule.md`)
+将资源替换为中文资源或带中文说明的链接（例如：文档、工具、参考书目）。
 
-This page automatically generates from `_data/schedule.yml`. No changes needed here unless you want to customize the layout.
+### 常见问题 `pages/faq.md`
 
-### 4. Resources (`pages/resources.md`)
-
-Replace the resource links with resources for your course:
-
-```markdown
-## [Resource Category]
-
-- **[Tool/Resource Name]:** [Link] - [Description]
-- **[Another Resource]:** [Link] - [Description]
-```
-
-**Resource categories to customize:**
-- Development Tools (required software)
-- Official Documentation
-- Libraries & Frameworks
-- Testing & Debugging Tools
-- APIs & Services
-- Learning Resources
-- Design Resources
-- Community & Support
-
-### 5. FAQ (`pages/faq.md`)
-
-Replace Android-specific questions with your course-specific FAQ:
-
-```markdown
-### [Section Header]
-
-**Q: Your question here?**
-
-A: Your answer here.
-```
-
-**FAQ sections to include:**
-- General Course Questions
-- Prerequisites & Enrollment
-- Technical Requirements
-- Grading & Assessment
-- Assignments & Projects
-- Communication & Help
-- Course-Specific Topics
+用中文替换或补充常见问题，按部分（课程常规、技术要求、作业与项目、评分与政策、沟通与帮助）组织内容。
 
 ---
 
-## Creating Course Content
+## 添加课程内容
 
-### Adding Lectures
+### 添加讲义
 
-Create files in `_lectures/` folder:
+在 `_lectures/` 中创建 Markdown 文件并添加 front matter：
 
 ```markdown
 ---
 layout: lecture
-title: "[Lecture Title]"
+title: "第一讲：课程介绍"
 week: 1
 date: 2026-01-27
 permalink: /lectures/week-01-lecture-01/
 ---
 
-## [Lecture Title]
+## 第一讲：课程介绍
 
-### Learning Objectives
-- [Objective 1]
-- [Objective 2]
-
-### Content
-[Your lecture content here]
-
-### Key Concepts
-- [Concept 1]
-- [Concept 2]
+内容...
 ```
 
-### Adding Assignments
+### 添加作业
 
-Create files in `_assignments/` folder:
+在 `_assignments/` 中创建文件，指定 `due_date` 与评分要求。
 
-```markdown
----
-layout: assignment
-title: "[Assignment Name]"
-week: 1
-due_date: 2026-02-05
-permalink: /assignments/assignment-01/
----
+### 添加项目
 
-## [Assignment Name]
-
-### Objectives
-- [Learning objective this assignment targets]
-
-### Requirements
-- [Requirement 1]
-- [Requirement 2]
-
-### Submission
-[How and where to submit]
-```
-
-### Adding Projects
-
-Create files in `_projects/` folder:
-
-```markdown
----
-layout: project
-title: "[Project Name]"
-week: 5
-due_date: 2026-03-15
-group: true  # or false for individual projects
-permalink: /projects/project-01/
----
-
-## [Project Name]
-
-### Objectives
-[What this project teaches]
-
-### Requirements
-[Specific project requirements]
-
-### Deliverables
-[What needs to be submitted]
-
-### Grading Rubric
-[How the project will be graded]
-```
+在 `_projects/` 中创建项目描述，并提供评分细则与提交方式。
 
 ---
 
-## Styling & Customization
+## 样式与本地化
 
-### Colors
+### 颜色与字体
 
-Edit `assets/css/main.css` to change the color scheme:
+在 `assets/css/main.css` 中修改变量以调整主题配色与字体。若需使用中文字体，可在 CSS 中引入相应的 Web 字体或系统字体。
+
+示例（中文字体优先）：
 
 ```css
-/* Primary colors */
---primary: #1976d2;      /* Main brand color */
+font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+```
+
+---
+
+## 部署与检查
+
+本地预览：
+
+```bash
+bundle exec jekyll serve
+```
+
+常见检查项：
+- 确认 `_data/` 中的中文内容正确显示
+- 确认页面路径与 `permalink` 无误
+- 检查 CSS 是否正确引用中文字体
+
+---
+
+如果你希望，我可以继续把 `pages/index.md`、`pages/syllabus.md` 等页面也翻译为中文并填写示例内容。 
 --primary-light: #42a5f5;
 --primary-dark: #1565c0;
 

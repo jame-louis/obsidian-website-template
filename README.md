@@ -259,78 +259,124 @@ instructor:
 - Screen reader friendly
 
 ## What Makes This a Template?
+## 开放课程网站模板
 
-This site is intentionally built as a **generic template** that works for any course:
+这是一个基于 Jekyll 的开放课程网站模板，适用于大学课程、训练营或任何教学项目。
 
-- ✅ No course-specific content hardcoded
-- ✅ All course info in easy-to-edit YAML files
-- ✅ Simple placeholder values guide customization
-- ✅ Reusable layouts for lectures, assignments, projects
-- ✅ Comprehensive customization guide included
-- ✅ Works for any subject matter or course type
+## 功能亮点
 
-## Examples
+- 易于定制：使用简单的 YAML 文件管理课程信息、日程和内容
+- 结构化内容：内置讲座、作业、项目与资源的组织方式
+- 专业设计：响应式界面，采用现代设计规范
+- 移动友好：在手机、平板和桌面设备上表现良好
+- 支持 SEO：适配搜索引擎的静态站点结构
+- 性能优越：Jekyll 静态站点生成，加载快速
+- 支持 GitHub Pages：可免费托管
 
-This template has been used for courses including:
-- Computer Science & Programming
-- Web Development
-- Mobile App Development
-- Data Science & Machine Learning
-- Design & UX
-- Business & Entrepreneurship
-- And more...
+## 包含内容
 
-## Troubleshooting
+- 主页：课程概览与快捷链接
+- 教学大纲（Syllabus）：课程信息、政策与评分标准
+- 日程：逐周教学安排
+- 讲义（Lectures）：单独讲座页面与资料
+- 作业（Assignments）：作业说明与提交要求
+- 项目（Projects）：课程项目规范
+- 资源（Resources）：工具与参考资料
+- 常见问题（FAQ）
 
-### Site doesn't build
-- Check Ruby version: `ruby -v` (should be 3.2+)
-- Run `bundle install` to update gems
-- Check `_config.yml` for YAML syntax errors
+## 快速开始
 
-### Links are broken
-- Verify `permalink` values in page front matter
-- Check that referenced files exist
-- Make sure URLs don't have trailing slashes (unless intended)
+### 前置条件
 
-### Styles look wrong
-- Clear browser cache
-- Run `bundle exec jekyll clean` and rebuild
-- Check CSS file paths in `assets/css/`
+```bash
+ruby -v   # 建议 Ruby 3.2+
+git --version
+```
 
-### Content not appearing
-- Verify file names match references in `_data/`
-- Check front matter formatting (must be valid YAML)
-- Ensure files are in correct folders with correct extensions
+### 本地预览
 
-## Getting Help
+1. 克隆仓库：
 
-1. **Read the [CUSTOMIZATION.md](CUSTOMIZATION.md)** - Comprehensive guide to all customizations
-2. **Check the [FAQ](pages/faq.md)** - Common questions and answers
-3. **Review Jekyll docs** - [jekyllrb.com](https://jekyllrb.com)
-4. **File an issue** - GitHub issues for bugs or questions
+```bash
+git clone https://github.com/yourusername/obsidian-website-template.git
+cd obsidian-website-template
+```
 
-## Contributing
+2. 安装依赖：
 
-Found a bug or have an improvement? Contributions welcome!
+```bash
+bundle install
+```
 
-1. Fork the repository
-2. Create a branch for your changes
-3. Make your improvements
-4. Submit a pull request
+3. 本地运行：
 
-## License
+```bash
+bundle exec jekyll serve
+```
 
-This template is provided as-is for educational use.
+打开 http://localhost:4000 查看站点。
 
-## Credits
+4. 编辑课程信息：修改 `_data/course-info.yml` 中的占位符
 
-Built with:
-- [Jekyll](https://jekyllrb.com/) - Static site generator
-- [Minima Theme](https://github.com/jekyll/minima) - Base theme
-- [Material Design](https://material.io) - Design system
+5. 部署到 GitHub Pages：推送到 GitHub 并在仓库设置中启用 Pages
+
+详细定制说明请参阅 `CUSTOMIZATION.md`。
+
+## 文件结构（概览）
+
+```text
+_config.yml
+_data/
+  ├─ course-info.yml
+  ├─ schedule.yml
+  ├─ nav.yml
+  └─ announcements.yml
+_layouts/
+_includes/
+_lectures/
+_assignments/
+_projects/
+pages/
+assets/
+Gemfile
+```
+
+## 自定义概要
+
+- 在 `_data/course-info.yml` 中设置课程标题、教师、学期、学习目标等
+- 在 `_data/schedule.yml` 中设置逐周计划
+- 编辑 `pages/` 下的页面以添加课程具体内容（主页、大纲、资源、FAQ）
+- 修改 `assets/css/main.css` 调整配色与排版
+
+更多定制内容请参阅 `CUSTOMIZATION.md`。
+
+## 添加课程内容示例
+
+创建讲义：在 `_lectures/` 新建 Markdown 文件并添加前置元数据（front matter）
+
+创建作业：在 `_assignments/` 新建作业文件并设置 `due_date` 等字段
+
+创建项目：在 `_projects/` 新建项目文件并添加评分标准
+
+## 部署选项
+
+- GitHub Pages：推送后在仓库设置启用 Pages
+- 自建服务器：`bundle exec jekyll build`，将 `_site/` 上传到服务器
+- 自定义域名：在根目录添加 `CNAME` 文件并配置 DNS
+
+## 技术栈
+
+- Jekyll（静态站点生成器）
+- Liquid 模板语言
+- YAML 数据文件
+- HTML/CSS/JavaScript
+
+## 帮助与贡献
+
+- 阅读 `CUSTOMIZATION.md` 获取详细指导
+- 如需帮助，可在仓库中提交 Issue
+- 欢迎贡献：Fork → 新建分支 → 提交 PR
 
 ---
 
-**Ready to create your course website?** Start with [CUSTOMIZATION.md](CUSTOMIZATION.md) for step-by-step instructions!
-
-Questions? Check [CUSTOMIZATION.md](CUSTOMIZATION.md) or review the example files in the template.
+开始自定义你的课程网站吧！如需我把其他页面也翻译为中文（例如 `syllabus.md`、`index.md`），我可以继续处理。 
