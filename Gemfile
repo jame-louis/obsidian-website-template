@@ -11,5 +11,3 @@ group :jekyll_plugins do
   gem "jekyll-wikilinks"
 end
 
-# Theme dependency
-gem "minima", "~> 2.5"

@@ -1,4 +1,3 @@
-title: "Syllabus"
 ---
 layout: course-page
 title: "教学大纲"
