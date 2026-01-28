@@ -15,11 +15,13 @@
             </button>
             
             <div class="nav-menu" id="navMenu">
-                {% for item in site.data.nav.main %}
-                <a href="{{ item.url | relative_url }}" class="nav-link">
-                    {{ item.title }}
-                </a>
-                {% endfor %}
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">主页</a></li>
+                    <li><a href="{{ '/lectures/' | relative_url }}">讲义</a></li>
+                    <li><a href="{{ '/assignments/' | relative_url }}">作业</a></li>
+                    <li><a href="{{ '/resources/' | relative_url }}">资源</a></li>
+                    <li><a href="{{ '/faq/' | relative_url }}">常见问题</a></li>
+                </ul>
             </div>
         </nav>
     </div>

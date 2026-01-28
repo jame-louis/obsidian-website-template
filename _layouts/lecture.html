@@ -5,9 +5,9 @@ layout: default
 <div class="lecture-page">
     <div class="lecture-header">
         <div class="breadcrumb">
-            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/' | relative_url }}">主页</a>
             <span>/</span>
-            <a href="{{ '/lectures/' | relative_url }}">Lectures</a>
+            <a href="{{ '/lectures/' | relative_url }}">讲义</a>
             <span>/</span>
             <span>{{ page.title }}</span>
         </div>
@@ -17,19 +17,19 @@ layout: default
         <div class="lecture-meta">
             {% if page.week %}
             <span class="meta-item">
-                <strong>Week:</strong> {{ page.week }}
+                <strong>周次：</strong> {{ page.week }}
             </span>
             {% endif %}
             
             {% if page.date %}
             <span class="meta-item">
-                <strong>Date:</strong> {{ page.date | date: "%B %d, %Y" }}
+                <strong>日期：</strong> {{ page.date | date: "%Y-%m-%d" }}
             </span>
             {% endif %}
             
             {% if page.duration %}
             <span class="meta-item">
-                <strong>Duration:</strong> {{ page.duration }} minutes
+                <strong>时长：</strong> {{ page.duration }} 分钟
             </span>
             {% endif %}
         </div>
@@ -46,17 +46,17 @@ layout: default
         
         {% if page.slides_url %}
         <div class="lecture-downloads">
-            <h3>Downloads</h3>
+            <h3>下载</h3>
             <ul>
                 <li>
                     <a href="{{ page.slides_url | relative_url }}" class="btn btn-primary">
-                        📄 Download Slides
+                        📄 下载讲义
                     </a>
                 </li>
                 {% if page.code_samples %}
                 <li>
                     <a href="{{ page.code_samples | relative_url }}" class="btn btn-secondary">
-                        💻 Code Samples
+                        💻 代码示例
                     </a>
                 </li>
                 {% endif %}
@@ -66,7 +66,7 @@ layout: default
         
         {% if page.resources %}
         <div class="lecture-resources">
-            <h3>Resources</h3>
+            <h3>资源</h3>
             <ul>
                 {% for resource in page.resources %}
                 <li><a href="#resource-{{ resource | slugify }}">{{ resource }}</a></li>
@@ -77,11 +77,11 @@ layout: default
         
         <div class="lecture-navigation">
             {% if page.previous %}
-            <a href="{{ page.previous.url }}" class="btn btn-nav">← Previous Lecture</a>
+            <a href="{{ page.previous.url }}" class="btn btn-nav">← 上一讲</a>
             {% endif %}
             
             {% if page.next %}
-            <a href="{{ page.next.url }}" class="btn btn-nav">Next Lecture →</a>
+            <a href="{{ page.next.url }}" class="btn btn-nav">下一讲 →</a>
             {% endif %}
         </div>
     </div>

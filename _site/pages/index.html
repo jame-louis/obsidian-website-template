@@ -87,105 +87,130 @@
     
     <div class="container">
         <main class="main-content">
-            <div class="homepage">
-    <section class="hero">
-        <div class="hero-content">
-            <h1>[Course Title]</h1>
-            <p class="tagline">Course materials, lectures, and resources</p>
-            <p class="course-meta">
-                Spring 2026 | [Institution Name]<br />
-                Instructor: Dr. [Your Name]
-            </p>
-            <div class="hero-buttons">
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;section class="hero"&gt; --- layout: course-page title: "主页" permalink: / ---
+</code></pre></div></div>
+
+<h2 id="欢迎">欢迎</h2>
+
+<h3 id="课程名称课程代码">[课程名称]（[课程代码]）</h3>
+
+<p>欢迎来到课程网站。这里汇集了课程大纲、教学日程、讲义、作业与参考资源。</p>
+
+<h3 id="快速链接">快速链接</h3>
+
+<ul>
+  <li><a href="/course-website/pages/syllabus/">教学大纲</a></li>
+  <li><a href="/course-website/pages/schedule/">课程日程</a></li>
+  <li><a href="/course-website/lectures/">讲义</a></li>
+  <li><a href="/course-website/assignments/">作业</a></li>
+  <li><a href="/course-website/pages/resources/">资源</a></li>
+  <li><a href="/course-website/pages/faq/">常见问题</a></li>
+</ul>
+
+<h3 id="公告">公告</h3>
+
+<ul>
+  <li>
+    <p><strong>[Announcement date - YYYY-MM-DD]</strong> — [Announcement title - e.g., Welcome to the course!]: [Announcement content - What students need to know or do]</p>
+  </li>
+  <li>
+    <p><strong>[Another announcement date]</strong> — [Assignment or deadline reminder]: [Details about the deadline or what’s due]</p>
+  </li>
+</ul>
+
+<p>如需更多信息，请先阅读 <a href="CUSTOMIZATION.md">CUSTOMIZATION.md</a> 或联系授课教师：instructor@example.com。
+            &lt;/p&gt;
+            &lt;div class="hero-buttons"&gt;
                 <a href="/course-website/pages/syllabus/" class="btn btn-primary">View Syllabus</a>
                 <a href="/course-website/pages/schedule/" class="btn btn-secondary">See Schedule</a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="course-info">
-        <div class="info-grid">
-            <div class="info-card">
-                <h3>📚 Course Overview</h3>
-                <p>[Add your course description here. This should provide a brief overview of the course topic, main concepts covered, and learning approach. Students will learn about [key topics] and apply their...</p>
-                <a href="/course-website/pages/syllabus/" class="card-link">Learn more →</a>
-            </div>
-            
-            <div class="info-card">
-                <h3>📅 Course Schedule</h3>
-                <p>16-week course with weekly meetings and assignments</p>
-                <a href="/course-website/pages/schedule/" class="card-link">Full schedule →</a>
-            </div>
-            
-            <div class="info-card">
-                <h3>🎓 Learning Outcomes</h3>
-                <p>Comprehensive learning objectives and competencies developed in this course</p>
-                <a href="/course-website/pages/syllabus/#learning-outcomes" class="card-link">View all →</a>
-            </div>
-            
-            <div class="info-card">
-                <h3>📞 Get Help</h3>
-                <p>Office hours: [Days and Times]</p>
-                <a href="mailto:instructor@example.com" class="card-link">
-                    Email instructor →
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="announcements">
-        <h2>Latest Announcements</h2>
-        <div class="announcements-list">
-            
-            <div class="announcement-item announcement-important">
-                <div class="announcement-date">
-                    [Announcement date - YYYY-MM-DD]
-                </div>
-                <div class="announcement-content">
-                    <h4>[Announcement title - e.g., Welcome to the course!]</h4>
-                    <p>[Announcement content - What students need to know or do]</p>
-                </div>
-            </div>
-            
-            <div class="announcement-item announcement-reminder">
-                <div class="announcement-date">
-                    [Another announcement date]
-                </div>
-                <div class="announcement-content">
-                    <h4>[Assignment or deadline reminder]</h4>
-                    <p>[Details about the deadline or what's due]</p>
-                </div>
-            </div>
-            
-        </div>
-        <a href="/course-website/announcements/" class="btn btn-secondary">View All Announcements</a>
-    </section>
-    
-    <section class="quick-links">
-        <h2>Course Materials</h2>
-        <div class="links-grid">
-            <a href="/course-website/lectures/" class="link-card">
-                <h3>📖 Lectures</h3>
-                <p>Weekly lectures and course notes</p>
-            </a>
-            
-            <a href="/course-website/assignments/" class="link-card">
-                <h3>✏️ Assignments</h3>
-                <p>Homework and weekly assignments</p>
-            </a>
-            
-            <a href="/course-website/projects/" class="link-card">
-                <h3>💻 Projects</h3>
-                <p>Major projects and final project</p>
-            </a>
-            
-            <a href="/course-website/pages/resources/" class="link-card">
-                <h3>🔗 Resources</h3>
-                <p>Tools, references, and documentation</p>
-            </a>
-        </div>
-    </section>
-</div>
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;section class="course-info"&gt;
+    &lt;div class="info-grid"&gt;
+        &lt;div class="info-card"&gt;
+            &lt;h3&gt;📚 Course Overview&lt;/h3&gt;
+            &lt;p&gt;[在此填写课程简介。概述课程内容、核心概念与教学方式。学生将学习[主要主题]，并通过作业/项目将理论应用于实践。]&lt;/p&gt;
+            &lt;a href="/course-website/pages/syllabus/" class="card-link"&gt;Learn more →&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="info-card"&gt;
+            &lt;h3&gt;📅 Course Schedule&lt;/h3&gt;
+            &lt;p&gt;16-week course with weekly meetings and assignments&lt;/p&gt;
+            &lt;a href="/course-website/pages/schedule/" class="card-link"&gt;Full schedule →&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="info-card"&gt;
+            &lt;h3&gt;🎓 Learning Outcomes&lt;/h3&gt;
+            &lt;p&gt;Comprehensive learning objectives and competencies developed in this course&lt;/p&gt;
+            &lt;a href="/course-website/pages/syllabus/#learning-outcomes" class="card-link"&gt;View all →&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="info-card"&gt;
+            &lt;h3&gt;📞 Get Help&lt;/h3&gt;
+            &lt;p&gt;Office hours: [办公时间，例如：周二 14:00-16:00]&lt;/p&gt;
+            &lt;a href="mailto:instructor@example.com" class="card-link"&gt;
+                Email instructor →
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class="announcements"&gt;
+    &lt;h2&gt;Latest Announcements&lt;/h2&gt;
+    &lt;div class="announcements-list"&gt;
+        
+        &lt;div class="announcement-item announcement-important"&gt;
+            &lt;div class="announcement-date"&gt;
+                [Announcement date - YYYY-MM-DD]
+            &lt;/div&gt;
+            &lt;div class="announcement-content"&gt;
+                &lt;h4&gt;[Announcement title - e.g., Welcome to the course!]&lt;/h4&gt;
+                &lt;p&gt;[Announcement content - What students need to know or do]&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="announcement-item announcement-reminder"&gt;
+            &lt;div class="announcement-date"&gt;
+                [Another announcement date]
+            &lt;/div&gt;
+            &lt;div class="announcement-content"&gt;
+                &lt;h4&gt;[Assignment or deadline reminder]&lt;/h4&gt;
+                &lt;p&gt;[Details about the deadline or what's due]&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+    &lt;a href="/course-website/announcements/" class="btn btn-secondary"&gt;View All Announcements&lt;/a&gt;
+&lt;/section&gt;
+
+&lt;section class="quick-links"&gt;
+    &lt;h2&gt;Course Materials&lt;/h2&gt;
+    &lt;div class="links-grid"&gt;
+        &lt;a href="/course-website/lectures/" class="link-card"&gt;
+            &lt;h3&gt;📖 Lectures&lt;/h3&gt;
+            &lt;p&gt;Weekly lectures and course notes&lt;/p&gt;
+        &lt;/a&gt;
+        
+        &lt;a href="/course-website/assignments/" class="link-card"&gt;
+            &lt;h3&gt;✏️ Assignments&lt;/h3&gt;
+            &lt;p&gt;Homework and weekly assignments&lt;/p&gt;
+        &lt;/a&gt;
+        
+        &lt;a href="/course-website/projects/" class="link-card"&gt;
+            &lt;h3&gt;💻 Projects&lt;/h3&gt;
+            &lt;p&gt;Major projects and final project&lt;/p&gt;
+        &lt;/a&gt;
+        
+        &lt;a href="/course-website/pages/resources/" class="link-card"&gt;
+            &lt;h3&gt;🔗 Resources&lt;/h3&gt;
+            &lt;p&gt;Tools, references, and documentation&lt;/p&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre></div></div>
+<p>&lt;/div&gt;</p>
 
         </main>
     </div>
@@ -204,11 +229,11 @@
         <div class="footer-section">
             <h3>Instructor</h3>
             <p>
-                Dr. [Your Name]<br>
+                [授课教师姓名]<br>
                 <a href="mailto:instructor@example.com">
                     instructor@example.com
                 </a><br>
-                [Days and Times]
+                [办公时间，例如：周二 14:00-16:00]
             </p>
         </div>
         
