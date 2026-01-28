@@ -1,0 +1,37 @@
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Course Info</h3>
+            <p>
+                <strong>{{ site.course.name }}</strong><br>
+                {{ site.course.semester }}<br>
+                {{ site.course.institution }}
+            </p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Instructor</h3>
+            <p>
+                {{ site.data.course-info.instructor.name }}<br>
+                <a href="mailto:{{ site.data.course-info.instructor.email }}">
+                    {{ site.data.course-info.instructor.email }}
+                </a><br>
+                {{ site.data.course-info.instructor.office_hours }}
+            </p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="{{ '/pages/syllabus/' | relative_url }}">Syllabus</a></li>
+                <li><a href="{{ '/pages/schedule/' | relative_url }}">Schedule</a></li>
+                <li><a href="{{ '/pages/resources/' | relative_url }}">Resources</a></li>
+                <li><a href="{{ '/pages/faq/' | relative_url }}">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.course.institution }}. All rights reserved.</p>
+    </div>
+</footer>

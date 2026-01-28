@@ -1,0 +1,114 @@
+---
+layout: default
+---
+
+<div class="project-page">
+    <div class="project-header">
+        <div class="breadcrumb">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <span>/</span>
+            <a href="{{ '/projects/' | relative_url }}">Projects</a>
+            <span>/</span>
+            <span>{{ page.title }}</span>
+        </div>
+        
+        <h1>{{ page.title }}</h1>
+        
+        {% if page.subtitle %}
+        <p class="subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+        
+        <div class="project-meta">
+            {% if page.number %}
+            <span class="meta-item">
+                <strong>Project:</strong> #{{ page.number }}
+            </span>
+            {% endif %}
+            
+            {% if page.difficulty %}
+            <span class="meta-item difficulty-{{ page.difficulty | downcase }}">
+                <strong>Difficulty:</strong> {{ page.difficulty }}
+            </span>
+            {% endif %}
+            
+            {% if page.duration %}
+            <span class="meta-item">
+                <strong>Duration:</strong> {{ page.duration }}
+            </span>
+            {% endif %}
+            
+            {% if page.team_size %}
+            <span class="meta-item">
+                <strong>Team Size:</strong> {{ page.team_size }}
+            </span>
+            {% endif %}
+            
+            {% if page.due_date %}
+            <span class="meta-item due-date">
+                <strong>Due:</strong> {{ page.due_date | date: "%B %d, %Y" }}
+            </span>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="project-body">
+        {% if page.learning_objectives %}
+        <div class="learning-section">
+            <h3>Learning Objectives</h3>
+            <ul>
+                {% for objective in page.learning_objectives %}
+                <li>{{ objective }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        
+        <div class="project-content">
+            {{ content }}
+        </div>
+        
+        {% if page.rubric %}
+        <div class="rubric">
+            <h3>Grading Rubric</h3>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterion</th>
+                        <th>Weight</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in page.rubric %}
+                    <tr>
+                        <td>{{ item.criterion }}</td>
+                        <td>{{ item.weight }}</td>
+                        <td>{{ item.details }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+        
+        {% if page.starter_code %}
+        <div class="project-resources">
+            <h3>Getting Started</h3>
+            <a href="{{ page.starter_code | relative_url }}" class="btn btn-primary">
+                📥 Download Starter Code
+            </a>
+        </div>
+        {% endif %}
+        
+        <div class="project-requirements">
+            <h3>Submission Checklist</h3>
+            <ul>
+                <li>Source code on GitHub (private repository)</li>
+                <li>Working demo on device or emulator</li>
+                <li>5-10 minute demonstration video</li>
+                <li>README.md with setup instructions</li>
+                <li>Project report (2-3 pages) or presentation slides</li>
+            </ul>
+        </div>
+    </div>
+</div>

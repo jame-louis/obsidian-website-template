@@ -1,0 +1,37 @@
+<div class="project-card">
+    <div class="card-header">
+        <h3>
+            <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        </h3>
+        {% if project.number %}
+        <span class="badge badge-project">Project #{{ project.number }}</span>
+        {% endif %}
+        {% if project.difficulty %}
+        <span class="badge badge-difficulty-{{ project.difficulty | downcase }}">
+            {{ project.difficulty }}
+        </span>
+        {% endif %}
+    </div>
+    
+    <div class="card-content">
+        {% if project.excerpt %}
+        <p>{{ project.excerpt }}</p>
+        {% else %}
+        <p>{{ project.content | strip_html | truncatewords: 40 }}</p>
+        {% endif %}
+    </div>
+    
+    <div class="card-footer">
+        {% if project.team_size %}
+        <span class="team-size">Team: {{ project.team_size }}</span>
+        {% endif %}
+        
+        {% if project.due_date %}
+        <span class="due-date">
+            Due: {{ project.due_date | date: "%b %d" }}
+        </span>
+        {% endif %}
+        
+        <a href="{{ project.url | relative_url }}" class="btn-link">View Project →</a>
+    </div>
+</div>

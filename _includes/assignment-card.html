@@ -1,0 +1,32 @@
+<div class="assignment-card">
+    <div class="card-header">
+        <h3>
+            <a href="{{ assignment.url | relative_url }}">{{ assignment.title }}</a>
+        </h3>
+        {% if assignment.week %}
+        <span class="badge badge-week">Week {{ assignment.week }}</span>
+        {% endif %}
+    </div>
+    
+    <div class="card-content">
+        {% if assignment.excerpt %}
+        <p>{{ assignment.excerpt }}</p>
+        {% else %}
+        <p>{{ assignment.content | strip_html | truncatewords: 30 }}</p>
+        {% endif %}
+    </div>
+    
+    <div class="card-footer">
+        {% if assignment.due_date %}
+        <span class="due-date">
+            Due: {{ assignment.due_date | date: "%b %d" }}
+        </span>
+        {% endif %}
+        
+        {% if assignment.points %}
+        <span class="points">{{ assignment.points }} points</span>
+        {% endif %}
+        
+        <a href="{{ assignment.url | relative_url }}" class="btn-link">View Assignment →</a>
+    </div>
+</div>

@@ -1,0 +1,419 @@
+semester_start: "2026-01-27"
+semester_end: "2026-05-16"
+total_weeks: 16
+
+weeks:
+  - week: 1
+    title: "Android Fundamentals & Setup"
+    start_date: "2026-01-27"
+    end_date: "2026-02-02"
+    topics:
+      - "Course Overview & Requirements"
+      - "Android Architecture & Ecosystem"
+      - "Android Studio Installation & Configuration"
+      - "Creating Your First Android Project"
+    learning_objectives:
+      - "Understand the Android platform architecture"
+      - "Install and configure Android development environment"
+      - "Create and run a basic Android application"
+      - "Navigate Android Studio IDE"
+    lectures:
+      - "week-01-introduction"
+      - "week-01-architecture"
+    assignments:
+      - "assignment-01-setup"
+    homework:
+      - "hw-01-environment-setup"
+    resources:
+      - "android-studio-guide"
+      - "android-architecture"
+    milestone: false
+
+  - week: 2
+    title: "Activities & Intents"
+    start_date: "2026-02-03"
+    end_date: "2026-02-09"
+    topics:
+      - "Activity Lifecycle"
+      - "Intent Objects"
+      - "Starting Activities"
+      - "Handling Results from Activities"
+    learning_objectives:
+      - "Understand Activity lifecycle and state transitions"
+      - "Use Intents to navigate between Activities"
+      - "Pass data between Activities"
+      - "Handle Activity results"
+    lectures:
+      - "week-02-activities"
+      - "week-02-intents"
+    assignments:
+      - "assignment-02-activities"
+    resources:
+      - "activity-lifecycle"
+      - "intent-guide"
+    milestone: false
+
+  - week: 3
+    title: "Layouts & UI Widgets"
+    start_date: "2026-02-10"
+    end_date: "2026-02-16"
+    topics:
+      - "Layout Types (LinearLayout, RelativeLayout, ConstraintLayout)"
+      - "Common Widgets (Button, EditText, TextView)"
+      - "Event Listeners & User Input"
+      - "Responsive Design"
+    learning_objectives:
+      - "Build UI layouts with XML"
+      - "Use various layout managers effectively"
+      - "Handle user input and events"
+      - "Design responsive layouts"
+    lectures:
+      - "week-03-layouts"
+      - "week-03-widgets"
+    assignments:
+      - "assignment-03-ui"
+    projects:
+      - "project-01-twitter-clone"
+    resources:
+      - "layout-guide"
+      - "material-design"
+    milestone: false
+
+  - week: 4
+    title: "Fragments & Navigation"
+    start_date: "2026-02-17"
+    end_date: "2026-02-23"
+    topics:
+      - "Fragment Basics"
+      - "Fragment Lifecycle"
+      - "Navigation Component"
+      - "Bottom Navigation"
+    learning_objectives:
+      - "Understand Fragment lifecycle"
+      - "Communicate between Fragments"
+      - "Implement navigation patterns"
+      - "Build multi-screen interfaces"
+    lectures:
+      - "week-04-fragments"
+      - "week-04-navigation"
+    assignments:
+      - "assignment-04-fragments"
+    resources:
+      - "fragment-guide"
+      - "navigation-component"
+    milestone: false
+
+  - week: 5
+    title: "Data Persistence - Local Storage"
+    start_date: "2026-02-24"
+    end_date: "2026-03-02"
+    topics:
+      - "SharedPreferences"
+      - "File Storage"
+      - "SQLite Database Basics"
+      - "Room Database"
+    learning_objectives:
+      - "Store and retrieve data using SharedPreferences"
+      - "Work with local file system"
+      - "Design and query SQLite databases"
+      - "Use Room ORM library"
+    lectures:
+      - "week-05-sharedpreferences"
+      - "week-05-sqlite-room"
+    assignments:
+      - "assignment-05-database"
+    resources:
+      - "data-persistence"
+      - "room-tutorial"
+    milestone: false
+
+  - week: 6
+    title: "Networking & REST APIs"
+    start_date: "2026-03-03"
+    end_date: "2026-03-09"
+    topics:
+      - "HTTP Requests"
+      - "REST API Fundamentals"
+      - "Retrofit Library"
+      - "Parsing JSON"
+      - "Error Handling"
+    learning_objectives:
+      - "Make HTTP requests from Android"
+      - "Understand REST API design"
+      - "Use Retrofit for API calls"
+      - "Parse and display JSON data"
+    lectures:
+      - "week-06-networking"
+      - "week-06-retrofit"
+    assignments:
+      - "assignment-06-networking"
+    projects:
+      - "project-01-twitter-clone"
+    resources:
+      - "networking-guide"
+      - "retrofit-documentation"
+    milestone: false
+
+  - week: 7
+    title: "RecyclerView & Lists"
+    start_date: "2026-03-10"
+    end_date: "2026-03-16"
+    topics:
+      - "RecyclerView Basics"
+      - "Adapters & ViewHolders"
+      - "List Item Layouts"
+      - "Item Click Listeners"
+      - "Performance Optimization"
+    learning_objectives:
+      - "Implement efficient list displays with RecyclerView"
+      - "Create custom Adapters"
+      - "Handle item interactions"
+      - "Optimize scrolling performance"
+    lectures:
+      - "week-07-recyclerview"
+    assignments:
+      - "assignment-07-lists"
+    projects:
+      - "project-02-todo-app"
+    resources:
+      - "recyclerview-guide"
+    milestone: true
+    milestone_name: "Project 1: Twitter Clone Due"
+
+  - week: 8
+    title: "Services & Background Tasks"
+    start_date: "2026-03-17"
+    end_date: "2026-03-23"
+    topics:
+      - "Service Components"
+      - "IntentService"
+      - "AsyncTask & Coroutines"
+      - "WorkManager"
+      - "Foreground Services"
+    learning_objectives:
+      - "Implement background services"
+      - "Handle long-running operations"
+      - "Understand threading models"
+      - "Schedule background work"
+    lectures:
+      - "week-08-services"
+      - "week-08-background-tasks"
+    assignments:
+      - "assignment-08-services"
+    resources:
+      - "services-guide"
+      - "coroutines-tutorial"
+    milestone: false
+
+  - week: 9
+    title: "Location Services & Maps"
+    start_date: "2026-03-24"
+    end_date: "2026-03-30"
+    topics:
+      - "Location Permissions"
+      - "Location Services API"
+      - "Google Maps Integration"
+      - "Geofencing"
+    learning_objectives:
+      - "Request and handle location permissions"
+      - "Get device location"
+      - "Integrate Google Maps"
+      - "Implement location-based features"
+    lectures:
+      - "week-09-location-services"
+      - "week-09-maps"
+    assignments:
+      - "assignment-09-location"
+    resources:
+      - "location-guide"
+      - "maps-api"
+    milestone: false
+
+  - week: 10
+    title: "Sensors & Device Features"
+    start_date: "2026-03-31"
+    end_date: "2026-04-06"
+    topics:
+      - "Sensor Framework"
+      - "Accelerometer & Gyroscope"
+      - "Camera Integration"
+      - "Device Permissions"
+    learning_objectives:
+      - "Access device sensors"
+      - "Process sensor data"
+      - "Integrate camera functionality"
+      - "Handle runtime permissions"
+    lectures:
+      - "week-10-sensors"
+      - "week-10-camera"
+    assignments:
+      - "assignment-10-sensors"
+    projects:
+      - "project-03-photo-app"
+    resources:
+      - "sensors-guide"
+      - "camera-documentation"
+    milestone: false
+
+  - week: 11
+    title: "Material Design & Animations"
+    start_date: "2026-04-07"
+    end_date: "2026-04-13"
+    topics:
+      - "Material Design Principles"
+      - "Material Components"
+      - "Custom Animations"
+      - "Transitions"
+      - "MotionLayout"
+    learning_objectives:
+      - "Apply Material Design principles"
+      - "Use Material Design components"
+      - "Create smooth animations"
+      - "Implement transitions between views"
+    lectures:
+      - "week-11-material-design"
+      - "week-11-animations"
+    assignments:
+      - "assignment-11-design"
+    resources:
+      - "material-design-guide"
+      - "animations-tutorial"
+    milestone: true
+    milestone_name: "Project 2: Todo App Due"
+
+  - week: 12
+    title: "Firebase & Cloud Services"
+    start_date: "2026-04-14"
+    end_date: "2026-04-20"
+    topics:
+      - "Firebase Authentication"
+      - "Firestore Database"
+      - "Cloud Storage"
+      - "Push Notifications"
+      - "Analytics"
+    learning_objectives:
+      - "Implement user authentication with Firebase"
+      - "Use Firestore for real-time data"
+      - "Store files in Cloud Storage"
+      - "Send push notifications"
+    lectures:
+      - "week-12-firebase-auth"
+      - "week-12-firestore"
+      - "week-12-notifications"
+    assignments:
+      - "assignment-12-firebase"
+    projects:
+      - "project-04-chat-app"
+    resources:
+      - "firebase-guide"
+      - "firestore-documentation"
+    milestone: false
+
+  - week: 13
+    title: "Testing & Debugging"
+    start_date: "2026-04-21"
+    end_date: "2026-04-27"
+    topics:
+      - "Unit Testing"
+      - "Instrumentation Tests"
+      - "Debugging Tools"
+      - "Performance Profiling"
+      - "Memory Management"
+    learning_objectives:
+      - "Write unit tests for Android components"
+      - "Use testing frameworks"
+      - "Debug applications effectively"
+      - "Profile app performance"
+    lectures:
+      - "week-13-testing"
+      - "week-13-debugging"
+    assignments:
+      - "assignment-13-testing"
+    resources:
+      - "testing-guide"
+      - "debugging-tools"
+    milestone: false
+
+  - week: 14
+    title: "Advanced Topics - Part 1"
+    start_date: "2026-04-28"
+    end_date: "2026-05-04"
+    topics:
+      - "Content Providers"
+      - "Broadcast Receivers"
+      - "Widget Development"
+      - "Kotlin Basics"
+    learning_objectives:
+      - "Implement Content Providers"
+      - "Use Broadcast Receivers"
+      - "Create App Widgets"
+      - "Write code in Kotlin"
+    lectures:
+      - "week-14-advanced-components"
+      - "week-14-kotlin"
+    assignments:
+      - "assignment-14-advanced"
+    resources:
+      - "content-providers"
+      - "kotlin-guide"
+    milestone: false
+
+  - week: 15
+    title: "Advanced Topics - Part 2 & Project Work"
+    start_date: "2026-05-05"
+    end_date: "2026-05-11"
+    topics:
+      - "App Architecture (MVVM, MVP)"
+      - "Dependency Injection"
+      - "Jetpack Components"
+      - "Final Project Presentations"
+    learning_objectives:
+      - "Design apps with proper architecture"
+      - "Use dependency injection"
+      - "Leverage AndroidX libraries"
+      - "Present and defend final project"
+    lectures:
+      - "week-15-architecture"
+      - "week-15-jetpack"
+    assignments: []
+    projects:
+      - "project-03-photo-app"
+      - "project-04-chat-app"
+    milestone: true
+    milestone_name: "Project 3: Photo App Due"
+
+  - week: 16
+    title: "Final Project Presentations & Course Wrap-up"
+    start_date: "2026-05-12"
+    end_date: "2026-05-16"
+    topics:
+      - "Final Project Presentations"
+      - "Code Review Sessions"
+      - "Course Review"
+      - "Next Steps in Mobile Development"
+    learning_objectives:
+      - "Present final projects to the class"
+      - "Receive feedback on implementations"
+      - "Reflect on learning outcomes"
+    lectures: []
+    assignments: []
+    resources: []
+    milestone: true
+    milestone_name: "Final Project Due & Presentations"
+
+exams:
+  - name: "Midterm Exam"
+    date: "2026-03-16"
+    week: 7
+    content: "Weeks 1-6"
+    type: "Practical"
+  - name: "Final Exam"
+    date: "2026-05-16"
+    week: 16
+    content: "Comprehensive (Weeks 1-16)"
+    type: "Final Project Presentation"
+
+holidays:
+  - name: "Spring Break"
+    start_date: "2026-03-23"
+    end_date: "2026-03-30"

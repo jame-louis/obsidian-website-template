@@ -1,10 +1,18 @@
 # Site settings
-title: Obsidian Jekyll Website
-email: your-email@example.com
+title: Android Programming & Design Course
+email: instructor@example.com
 description: >-
-  A website built with Obsidian notes and Jekyll, automatically deployed to GitHub Pages.
-baseurl: "/obsidian-website-template" # the subpath of your site, e.g. /blog
+  Comprehensive course on Android programming and application design for college students.
+baseurl: "/android-course" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Course settings
+course:
+  name: "Android Programming & Design"
+  semester: "Spring 2026"
+  institution: "Your University"
+  instructor: "Dr. [Your Name]"
+  credits: 3
 
 # Build settings
 markdown: kramdown
@@ -12,7 +20,6 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-wikilinks
 
 # Exclude from processing
 exclude:
@@ -23,25 +30,54 @@ exclude:
   - Gemfile.lock
   - README.md
   - node_modules/
+  - COURSE_REFACTOR_PLAN.md
 
 # Collections
 collections:
+  lectures:
+    output: true
+    permalink: /lectures/:path/
+  assignments:
+    output: true
+    permalink: /assignments/:slug/
+  projects:
+    output: true
+    permalink: /projects/:slug/
+  resources:
+    output: true
+    permalink: /resources/:slug/
   posts:
     output: true
-    permalink: /:year/:month/:day/:title/
-
-# Permalinks
-permalink: /:year/:month/:day/:title/
+    permalink: /announcements/:year/:month/:day/:title/
 
 # Defaults
 defaults:
   - scope:
       path: ""
+      type: "lectures"
+    values:
+      layout: "lecture"
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: "resource"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
-      comments: true
-
-wikilinks:                                                                                                                                                            
-  strip_extension: true                                                                                                                                               
-  base_url: /obsidian-website-template 
+  - scope:
+      path: "pages"
+    values:
+      layout: "course-page" 

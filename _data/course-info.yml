@@ -1,0 +1,84 @@
+title: "Android Programming & Design"
+course_code: "CS 3001"
+semester: "Spring 2026"
+year: 2026
+institution: "Your University"
+department: "Computer Science"
+credits: 3
+level: "Intermediate"
+
+instructor:
+  name: "Dr. [Your Name]"
+  email: "instructor@example.com"
+  office: "Engineering Building, Room 301"
+  office_hours: "Tuesday & Thursday, 2:00 PM - 4:00 PM"
+  bio: "Dr. [Name] has [X] years of experience in Android development and mobile app design."
+
+meeting:
+  days: "Monday, Wednesday, Friday"
+  time: "10:00 AM - 11:15 AM"
+  location: "Engineering Building, Room 205"
+  duration_minutes: 75
+
+description: >-
+  This course introduces students to Android application development and design principles.
+  Students will learn the fundamentals of the Android platform, including Activities, Services,
+  Content Providers, and Broadcast Receivers. The course covers UI design with Layouts and
+  Fragments, data persistence, networking, and integration with device features like location
+  and sensors. Students will build several applications throughout the course, culminating in
+  a final project of their choice.
+
+learning_outcomes:
+  - "Understand the Android application architecture and lifecycle"
+  - "Design and implement user interfaces using XML layouts and Material Design principles"
+  - "Build data-driven applications using SQLite and Firebase"
+  - "Integrate Android apps with REST APIs and cloud services"
+  - "Implement location-based services and device sensors"
+  - "Deploy and publish Android applications to Google Play Store"
+  - "Apply software engineering best practices in mobile development"
+
+prerequisites:
+  - "Java Programming (CS 1003)"
+  - "Object-Oriented Design (CS 2001)"
+  - "Data Structures (CS 2010)"
+
+textbook: null
+textbook_note: "Course materials are freely available online. No textbook purchase required."
+
+grading:
+  participation: 5
+  homework: 15
+  assignments: 20
+  projects: 40
+  final_project: 20
+
+grading_scale:
+  A: "90-100"
+  B: "80-89"
+  C: "70-79"
+  D: "60-69"
+  F: "Below 60"
+
+policies:
+  - title: "Attendance"
+    content: "Attendance is mandatory. More than 3 unexcused absences will impact your grade."
+  - title: "Late Work"
+    content: "Assignments submitted late will receive a 10% penalty per day, up to 5 days maximum."
+  - title: "Academic Integrity"
+    content: "All work must be your own. Plagiarism or cheating will result in failure of the course."
+  - title: "Accessibility"
+    content: "Students with disabilities should contact the disability services office for accommodations."
+
+required_software:
+  - name: "Android Studio"
+    version: "2024.1 or later"
+    link: "https://developer.android.com/studio"
+    cost: "Free"
+  - name: "Java Development Kit (JDK)"
+    version: "17 or later"
+    link: "https://www.oracle.com/java/technologies/downloads/"
+    cost: "Free"
+  - name: "Git"
+    version: "Latest"
+    link: "https://git-scm.com"
+    cost: "Free"

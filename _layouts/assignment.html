@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<div class="assignment-page">
+    <div class="assignment-header">
+        <div class="breadcrumb">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <span>/</span>
+            <a href="{{ '/assignments/' | relative_url }}">Assignments</a>
+            <span>/</span>
+            <span>{{ page.title }}</span>
+        </div>
+        
+        <h1>{{ page.title }}</h1>
+        
+        <div class="assignment-meta">
+            {% if page.week %}
+            <span class="meta-item">
+                <strong>Week:</strong> {{ page.week }}
+            </span>
+            {% endif %}
+            
+            {% if page.due_date %}
+            <span class="meta-item due-date">
+                <strong>Due:</strong> {{ page.due_date | date: "%B %d, %Y at %I:%M %p" }}
+            </span>
+            {% endif %}
+            
+            {% if page.submission_type %}
+            <span class="meta-item">
+                <strong>Submission:</strong> {{ page.submission_type }}
+            </span>
+            {% endif %}
+            
+            {% if page.points %}
+            <span class="meta-item points">
+                <strong>Points:</strong> {{ page.points }}
+            </span>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="assignment-body">
+        {% if page.learning_objectives %}
+        {% include learning-objectives.html objectives=page.learning_objectives %}
+        {% endif %}
+        
+        <div class="assignment-content">
+            {{ content }}
+        </div>
+        
+        {% if page.rubric %}
+        <div class="rubric">
+            <h3>Grading Rubric</h3>
+            <table class="rubric-table">
+                <thead>
+                    <tr>
+                        <th>Criterion</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in page.rubric %}
+                    <tr>
+                        <td>{{ item.criterion }}</td>
+                        <td>{{ item.points }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+        
+        {% if page.starter_code %}
+        <div class="assignment-resources">
+            <h3>Starter Code</h3>
+            <a href="{{ page.starter_code | relative_url }}" class="btn btn-primary">
+                📥 Download Starter Code
+            </a>
+        </div>
+        {% endif %}
+        
+        <div class="assignment-submission">
+            <h3>Submission Instructions</h3>
+            <ol>
+                <li>Complete all requirements listed above</li>
+                <li>Test your solution thoroughly</li>
+                <li>Submit via {{ page.submission_type }}</li>
+                <li>Include a brief README explaining your implementation</li>
+            </ol>
+        </div>
+        
+        <div class="assignment-help">
+            <p>
+                <strong>Need help?</strong> 
+                Office hours are {{ site.data.course-info.instructor.office_hours }} or email {{ site.data.course-info.instructor.email }}
+            </p>
+        </div>
+    </div>
+</div>

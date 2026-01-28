@@ -1,0 +1,24 @@
+announcements:
+  - date: "2026-01-27"
+    title: "Welcome to Android Programming & Design!"
+    content: "Course begins today. Please review the syllabus and course schedule. Download Android Studio before our next class."
+    type: "important"
+    urgency: "high"
+  
+  - date: "2026-02-01"
+    title: "Assignment 1 Due Tomorrow"
+    content: "Make sure your Android Studio environment is properly configured. Submit your verification through the course portal."
+    type: "reminder"
+    urgency: "medium"
+
+important_dates:
+  - date: "2026-01-27"
+    title: "Course Starts"
+  - date: "2026-03-16"
+    title: "Midterm Exam"
+  - date: "2026-03-23"
+    title: "Spring Break Begins"
+  - date: "2026-03-30"
+    title: "Spring Break Ends"
+  - date: "2026-05-16"
+    title: "Final Presentations & Course Ends"
