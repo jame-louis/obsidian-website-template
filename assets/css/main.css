@@ -1,17 +1,11 @@
 /* CSS Variables */
 :root {
-    --primary-color: #1976d2;
-    --primary-dark: #1565c0;
-    --primary-light: #42a5f5;
-    --secondary-color: #388e3c;
-    --accent-color: #d32f2f;
-    --text-color: #212121;
+    --primary-color: #333333;
+    --text-color: #333333;
     --text-light: #666666;
     --border-color: #e0e0e0;
-    --bg-light: #f5f5f5;
+    --bg-light: #f9f9f9;
     --bg-white: #ffffff;
-    --shadow: 0 2px 4px rgba(0,0,0,0.1);
-    --shadow-lg: 0 4px 8px rgba(0,0,0,0.15);
     
     --font-size-base: 16px;
     --font-size-large: 18px;
@@ -110,10 +104,10 @@ pre code {
 
 /* Header */
 .site-header {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--bg-white);
+    color: var(--text-color);
     padding: 1rem 0;
-    box-shadow: var(--shadow);
+    border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -129,13 +123,13 @@ pre code {
 }
 
 .site-branding h1 {
-    color: white;
+    color: var(--text-color);
     font-size: 1.8rem;
     margin: 0;
 }
 
 .site-branding a {
-    color: white;
+    color: var(--text-color);
 }
 
 .course-semester {
@@ -159,16 +153,15 @@ pre code {
 }
 
 .nav-link {
-    color: white;
+    color: var(--text-color);
     padding: 0.5rem 1rem;
     display: inline-block;
     text-decoration: none;
-    transition: background-color 0.3s;
 }
 
 .nav-link:hover {
-    background-color: var(--primary-dark);
-    text-decoration: none;
+    color: var(--text-light);
+    text-decoration: underline;
 }
 
 .nav-toggle {
@@ -225,54 +218,62 @@ pre code {
     display: inline-block;
     padding: 0.5rem 1.2rem;
     border-radius: var(--border-radius);
-    border: none;
+    border: 1px solid var(--border-color);
     cursor: pointer;
     font-size: 1rem;
     text-decoration: none;
-    transition: all 0.3s;
     text-align: center;
+    background-color: var(--bg-white);
+    color: var(--text-color);
+}
+
+.btn:hover {
+    background-color: var(--bg-light);
+    text-decoration: none;
 }
 
 .btn-primary {
     background-color: var(--primary-color);
     color: white;
+    border-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-dark);
+    background-color: #555;
+    border-color: #555;
     text-decoration: none;
 }
 
 .btn-secondary {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    border-color: var(--border-color);
 }
 
 .btn-secondary:hover {
-    background-color: #2e7d32;
+    background-color: #e8e8e8;
     text-decoration: none;
 }
 
 .btn-nav {
-    background-color: var(--bg-light);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    background-color: var(--bg-white);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
     padding: 0.75rem 1.5rem;
 }
 
 .btn-nav:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--bg-light);
     text-decoration: none;
 }
 
 .btn-link {
-    color: var(--primary-color);
+    color: var(--text-color);
     text-decoration: underline;
 }
 
 .btn-link:hover {
-    color: var(--primary-dark);
+    color: var(--text-light);
 }
 
 /* Cards */
@@ -281,12 +282,6 @@ pre code {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     padding: 1.5rem;
-    box-shadow: var(--shadow);
-    transition: box-shadow 0.3s;
-}
-
-.card:hover {
-    box-shadow: var(--shadow-lg);
 }
 
 /* Badges */
@@ -297,31 +292,34 @@ pre code {
     font-size: 0.85rem;
     font-weight: 600;
     margin-left: 0.5rem;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
 }
 
 .badge-week {
-    background-color: var(--primary-light);
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
 }
 
 .badge-project {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
 }
 
 .badge-difficulty-easy {
-    background-color: #4caf50;
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
 }
 
 .badge-difficulty-intermediate {
-    background-color: #ff9800;
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
 }
 
 .badge-difficulty-hard {
-    background-color: #d32f2f;
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
 }
 
 /* Tables */
@@ -343,7 +341,7 @@ th {
 }
 
 tr:hover {
-    background-color: #fafafa;
+    background-color: transparent;
 }
 
 /* Forms */
@@ -358,8 +356,8 @@ input, textarea, select {
 
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+    border-color: var(--text-color);
+    box-shadow: none;
 }
 
 /* Lists */
@@ -400,7 +398,7 @@ li {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--primary-dark);
+        background-color: var(--bg-light);
         width: 100%;
     }
 
@@ -424,16 +422,17 @@ li {
 }
 
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
     padding: 4rem 2rem;
     border-radius: var(--border-radius);
     text-align: center;
     margin-bottom: 3rem;
+    border: 1px solid var(--border-color);
 }
 
 .hero h1 {
-    color: white;
+    color: var(--text-color);
     font-size: 2.5rem;
     margin: 0 0 0.5rem 0;
 }
@@ -469,21 +468,19 @@ li {
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     padding: 1.5rem;
-    transition: all 0.3s;
 }
 
 .info-card:hover, .link-card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-4px);
+    background-color: var(--bg-light);
 }
 
 .info-card h3, .link-card h3 {
     margin-top: 0;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .card-link {
-    color: var(--primary-color);
+    color: var(--text-color);
     font-weight: 600;
 }
 
@@ -504,7 +501,7 @@ li {
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--border-color);
     background-color: var(--bg-light);
     margin-bottom: 1rem;
     border-radius: var(--border-radius);
@@ -512,7 +509,7 @@ li {
 
 .announcement-date {
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--text-color);
     min-width: 80px;
 }
 
@@ -521,13 +518,13 @@ li {
 }
 
 .announcement-important {
-    border-left-color: var(--accent-color);
-    background-color: rgba(211, 47, 47, 0.05);
+    border-left-color: var(--border-color);
+    background-color: var(--bg-light);
 }
 
 .announcement-reminder {
-    border-left-color: #ff9800;
-    background-color: rgba(255, 152, 0, 0.05);
+    border-left-color: var(--border-color);
+    background-color: var(--bg-light);
 }
 
 /* Breadcrumb */
@@ -538,20 +535,20 @@ li {
 }
 
 .breadcrumb a {
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* Learning Objectives */
 .learning-objectives {
     background-color: var(--bg-light);
-    border-left: 4px solid var(--secondary-color);
+    border-left: 4px solid var(--border-color);
     padding: 1rem;
     border-radius: var(--border-radius);
     margin: 1.5rem 0;
 }
 
 .learning-objectives h3 {
-    color: var(--secondary-color);
+    color: var(--text-color);
     margin-top: 0;
 }
 
@@ -572,19 +569,20 @@ li {
 }
 
 .rubric-table th {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--bg-light);
+    color: var(--text-color);
     padding: 1rem;
     text-align: left;
+    border: 1px solid var(--border-color);
 }
 
 .rubric-table td {
     padding: 1rem;
-    border-bottom: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 .rubric-table tr:hover {
-    background-color: var(--bg-light);
+    background-color: transparent;
 }
 
 /* Utility Classes */
