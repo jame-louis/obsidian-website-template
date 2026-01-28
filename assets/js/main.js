@@ -73,7 +73,7 @@ function generateTableOfContents() {
         
         const level = heading.tagName === 'H2' ? 0 : 1;
         const li = document.createElement('li');
-        li.style.marginLeft = (level * 1) + 'rem';
+        li.style.marginLeft = (level * 0.75) + 'rem';
         
         const a = document.createElement('a');
         a.href = `#${heading.id}`;
@@ -84,7 +84,7 @@ function generateTableOfContents() {
     });
     
     toc.innerHTML += '</ul>';
-    content.insertBefore(toc, content.firstChild);
+    document.body.insertBefore(toc, document.body.firstChild);
 }
 
 // Initialize on page load

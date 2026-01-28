@@ -594,17 +594,73 @@ li {
 .text-light { color: var(--text-light); }
 .hidden { display: none; }
 
-/* Accessibility */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
+/* Table of Contents Sidebar */
+.table-of-contents {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--bg-light);
+    border-right: 1px solid var(--border-color);
+    padding: 2rem 1rem;
+    overflow-y: auto;
+    margin-top: 60px;
+    z-index: 50;
+}
+
+.table-of-contents h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.table-of-contents ul {
+    list-style: none;
     padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+    margin: 0;
+}
+
+.table-of-contents li {
+    margin-bottom: 0.5rem;
+}
+
+.table-of-contents a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+}
+
+.table-of-contents a:hover {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Adjust main content layout for sidebar */
+.page-body, .lecture-content, .assignment-content, .main-content {
+    margin-left: 250px;
+    padding: 2rem;
+}
+
+/* Responsive: Hide sidebar on mobile */
+@media (max-width: 768px) {
+    .table-of-contents {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        max-height: 500px;
+        margin-top: 0;
+        top: auto;
+    }
+    
+    .page-body, .lecture-content, .assignment-content, .main-content {
+        margin-left: 0;
+    }
 }
 
 /* Print Styles */
