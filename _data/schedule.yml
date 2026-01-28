@@ -1,82 +1,89 @@
-semester_start: "2026-01-27"
-semester_end: "2026-05-16"
+# ===========================================================================
+# COURSE SCHEDULE TEMPLATE
+# ===========================================================================
+# Instructions for customizing:
+# 1. Update semester_start, semester_end, and total_weeks
+# 2. For each week, replace the example content with your course topics
+# 3. Update lecture, assignment, project, and resource references
+# 4. Set milestone: true for significant events/deadlines
+# ===========================================================================
+
+semester_start: "[Start Date - e.g., 2026-01-27]"
+semester_end: "[End Date - e.g., 2026-05-16]"
 total_weeks: 16
 
 weeks:
+  # Week 1 Template
   - week: 1
-    title: "Android Fundamentals & Setup"
-    start_date: "2026-01-27"
-    end_date: "2026-02-02"
+    title: "[Week 1 Title - e.g., Course Overview & Introduction]"
+    start_date: "[Week start date]"
+    end_date: "[Week end date]"
     topics:
-      - "Course Overview & Requirements"
-      - "Android Architecture & Ecosystem"
-      - "Android Studio Installation & Configuration"
-      - "Creating Your First Android Project"
+      - "[Topic 1 for this week]"
+      - "[Topic 2 for this week]"
+      - "[Topic 3 for this week]"
+      - "[Topic 4 for this week]"
     learning_objectives:
-      - "Understand the Android platform architecture"
-      - "Install and configure Android development environment"
-      - "Create and run a basic Android application"
-      - "Navigate Android Studio IDE"
+      - "[Students will learn/understand: specific objective 1]"
+      - "[Students will be able to: specific objective 2]"
+      - "[Students will develop: specific skill 1]"
+      - "[Students will create: specific outcome 1]"
     lectures:
-      - "week-01-introduction"
-      - "week-01-architecture"
+      - "week-01-lecture-01"
+      - "week-01-lecture-02"
     assignments:
-      - "assignment-01-setup"
+      - "assignment-01"
     homework:
-      - "hw-01-environment-setup"
+      - "hw-01-reading"
     resources:
-      - "android-studio-guide"
-      - "android-architecture"
+      - "resource-key-01"
+      - "resource-key-02"
     milestone: false
 
+  # Week 2 Template
   - week: 2
-    title: "Activities & Intents"
-    start_date: "2026-02-03"
-    end_date: "2026-02-09"
+    title: "[Week 2 Title]"
+    start_date: "[Week start date]"
+    end_date: "[Week end date]"
     topics:
-      - "Activity Lifecycle"
-      - "Intent Objects"
-      - "Starting Activities"
-      - "Handling Results from Activities"
+      - "[Topic 1 for this week]"
+      - "[Topic 2 for this week]"
+      - "[Topic 3 for this week]"
     learning_objectives:
-      - "Understand Activity lifecycle and state transitions"
-      - "Use Intents to navigate between Activities"
-      - "Pass data between Activities"
-      - "Handle Activity results"
+      - "[Learning objective 1]"
+      - "[Learning objective 2]"
+      - "[Learning objective 3]"
     lectures:
-      - "week-02-activities"
-      - "week-02-intents"
+      - "week-02-lecture-01"
+      - "week-02-lecture-02"
     assignments:
-      - "assignment-02-activities"
+      - "assignment-02"
     resources:
-      - "activity-lifecycle"
-      - "intent-guide"
+      - "resource-key-01"
+      - "resource-key-02"
     milestone: false
 
+  # Week 3 Template
   - week: 3
-    title: "Layouts & UI Widgets"
-    start_date: "2026-02-10"
-    end_date: "2026-02-16"
+    title: "[Week 3 Title]"
+    start_date: "[Week start date]"
+    end_date: "[Week end date]"
     topics:
-      - "Layout Types (LinearLayout, RelativeLayout, ConstraintLayout)"
-      - "Common Widgets (Button, EditText, TextView)"
-      - "Event Listeners & User Input"
-      - "Responsive Design"
+      - "[Topic 1 for this week]"
+      - "[Topic 2 for this week]"
+      - "[Topic 3 for this week]"
     learning_objectives:
-      - "Build UI layouts with XML"
-      - "Use various layout managers effectively"
-      - "Handle user input and events"
-      - "Design responsive layouts"
+      - "[Learning objective 1]"
+      - "[Learning objective 2]"
+      - "[Learning objective 3]"
     lectures:
-      - "week-03-layouts"
-      - "week-03-widgets"
+      - "week-03-lecture-01"
     assignments:
-      - "assignment-03-ui"
+      - "assignment-03"
     projects:
-      - "project-01-twitter-clone"
+      - "project-01-description"
     resources:
-      - "layout-guide"
-      - "material-design"
+      - "resource-key-01"
     milestone: false
 
   - week: 4

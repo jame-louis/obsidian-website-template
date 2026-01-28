@@ -10,18 +10,15 @@ permalink: /pages/faq/
 
 **Q: What are the prerequisites for this course?**
 
-A: You should have completed Java Programming (CS 1003), Object-Oriented Design (CS 2001), and Data Structures (CS 2010). If you haven't taken these courses, please speak with the instructor about whether you're ready for this course.
+A: Please check the [Course Syllabus]({{ '/pages/syllabus/' | relative_url }}) for prerequisite requirements. If you have questions about whether you're ready, please contact the instructor.
 
 **Q: Do I need to purchase any software?**
 
-A: No! All required software for this course is free:
-- Android Studio (free IDE from Google)
-- Java Development Kit (free)
-- Git and GitHub (free accounts)
+A: The required software is listed in the [Syllabus]({{ '/pages/syllabus/' | relative_url }}). Most courses use free, open-source tools.
 
 **Q: Is there a textbook?**
 
-A: No required textbook. All course materials are freely available online through the official Android Developer documentation and course resources.
+A: Please check the [Course Syllabus]({{ '/pages/syllabus/' | relative_url }}) for textbook and materials information.
 
 ---
 
@@ -31,25 +28,139 @@ A: No required textbook. All course materials are freely available online throug
 
 A: A modern laptop or desktop with:
 - At least 8 GB RAM (16 GB recommended)
-- 20 GB free disk space
+- Sufficient disk space for course software
 - Windows, macOS, or Linux
 - Internet connection
 
+**Q: What if I don't have a suitable computer?**
+
+A: Please contact your institution about student computer labs or equipment loaning programs.
+
 **Q: Can I use a Mac?**
 
-A: Yes! Android Studio runs on Windows, macOS, and Linux equally well.
+A: Yes! Most development tools work on Windows, macOS, and Linux.
 
-**Q: Can I develop Android apps on a Chromebook?**
+**Q: How do I install the required software?**
 
-A: Chromebooks have limited Android development support. A traditional laptop is strongly recommended.
+A: Installation guides are available in the [Resources]({{ '/pages/resources/' | relative_url }}) section.
 
-**Q: Do I need an Android phone?**
+---
 
-A: No. Android Studio includes an emulator that simulates Android devices. However, testing on a real device is beneficial.
+### Course Policies
 
-**Q: How do I install Android Studio?**
+**Q: What is the late policy?**
 
-A: See the [Resources]({{ '/pages/resources/' | relative_url }}) page for the Android Studio download link and follow the official installation guide.
+A: Check the [Course Syllabus]({{ '/pages/syllabus/' | relative_url }}) for the complete late work policy.
+
+**Q: Can I submit assignments early?**
+
+A: Yes! Early submissions are always welcome.
+
+**Q: What is the attendance policy?**
+
+A: See the [Course Syllabus]({{ '/pages/syllabus/#policies' | relative_url }}) for attendance requirements.
+
+**Q: How do I request accommodations for a disability?**
+
+A: Contact your institution's disability services office. They will work with the instructor to provide appropriate accommodations.
+
+---
+
+### Grading & Assessment
+
+**Q: How is my grade calculated?**
+
+A: See the [Course Syllabus]({{ '/pages/syllabus/#grading' | relative_url }}) for the grading breakdown.
+
+**Q: What is a passing grade?**
+
+A: Check the [Course Syllabus]({{ '/pages/syllabus/#grading' | relative_url }}) for the grading scale.
+
+**Q: Can I retake assignments?**
+
+A: Please discuss with the instructor. You can meet during office hours to discuss improvements.
+
+**Q: How often should I expect to be graded?**
+
+A: Assignments are typically graded within one week of submission. Projects may take longer.
+
+---
+
+### Lectures & Materials
+
+**Q: Where do I find lecture materials?**
+
+A: Lecture materials are available on the [Lectures]({{ '/lectures/' | relative_url }}) page.
+
+**Q: Will lectures be recorded?**
+
+A: Check the syllabus or announcements for recording policy.
+
+**Q: What if I miss a class?**
+
+A: Review the lecture notes and materials on the course website. Reach out to classmates for supplemental notes.
+
+**Q: Are there practice problems or homework?**
+
+A: Yes! Check the [Assignments]({{ '/assignments/' | relative_url }}) page for all available work.
+
+---
+
+### Projects
+
+**Q: Do I have to work in a group?**
+
+A: Check individual assignment/project requirements. Some are individual, some allow group work.
+
+**Q: What if my group member isn't contributing?**
+
+A: Contact the instructor immediately. We'll work together to find a solution.
+
+**Q: Can I use code from online tutorials?**
+
+A: You may reference and learn from tutorials, but you must write your own code and understand what you submit.
+
+**Q: What happens if I commit academic dishonesty?**
+
+A: Plagiarism or cheating has serious consequences per your institution's academic integrity policies.
+
+---
+
+### Communication & Help
+
+**Q: How do I contact the instructor?**
+
+A: Email {{ site.data.course-info.instructor.email }} or visit during office hours: {{ site.data.course-info.instructor.office_hours }} in {{ site.data.course-info.instructor.office }}
+
+**Q: How quickly will the instructor respond to emails?**
+
+A: Emails are typically answered within 24 hours (48 hours on weekends).
+
+**Q: What if I need extra help?**
+
+A: Attend office hours! The instructor is available {{ site.data.course-info.instructor.office_hours }}.
+
+**Q: Are there tutoring services?**
+
+A: Check with your institution's tutoring center for available academic support services.
+
+---
+
+### Course-Specific Questions
+
+[Add your own course-specific FAQs here]
+
+---
+
+### Still Have Questions?
+
+If your question isn't answered here:
+1. Check the [Resources]({{ '/pages/resources/' | relative_url }}) page
+2. Review relevant course materials
+3. Email the instructor: {{ site.data.course-info.instructor.email }}
+4. Check announcements for common questions
+
+Don't hesitate to ask for help!
 
 ---
 

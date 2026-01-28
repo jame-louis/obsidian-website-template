@@ -6,152 +6,168 @@ permalink: /pages/resources/
 
 ## Course Resources
 
-This page contains links to tools, APIs, documentation, and other resources useful for Android development.
+This page contains links to tools, documentation, and other resources useful for this course. Customize these links for your specific course content.
 
 ---
 
 ## Development Tools
 
-### Android Studio
-- **Official IDE:** [Android Studio](https://developer.android.com/studio)
-- **Documentation:** [Android Studio User Guide](https://developer.android.com/studio/intro)
-- **Download:** Free (with optional paid features)
+### Required Software
+- **[Tool Name 1]:** [Link to tool](https://example.com) - [Brief description of purpose]
+- **[Tool Name 2]:** [Link to tool](https://example.com) - [Brief description of purpose]
+- **[Tool Name 3]:** [Link to tool](https://example.com) - [Brief description of purpose]
 
-### Java Development Kit (JDK)
-- **Download:** [Oracle JDK](https://www.oracle.com/java/technologies/downloads/)
-- **Alternative:** [OpenJDK](https://openjdk.java.net/)
-- **Required Version:** Java 17 or higher
+### Optional Software
+- **[Tool Name 4]:** [Link to tool](https://example.com) - [Useful for advanced topics]
+- **[Tool Name 5]:** [Link to tool](https://example.com) - [Useful for projects]
 
 ### Version Control
 - **Git:** [Official Git Website](https://git-scm.com)
-- **GitHub:** [GitHub Desktop](https://desktop.github.com)
+- **GitHub:** [GitHub](https://github.com)
 - **Documentation:** [GitHub Guides](https://guides.github.com)
 
 ---
 
-## Android Development Documentation
+## Official Documentation
 
-### Official Android Documentation
-- **Developer Guide:** [Android Developers](https://developer.android.com)
-- **API Reference:** [Android API Documentation](https://developer.android.com/reference)
-- **Samples:** [Android Samples on GitHub](https://github.com/android/samples)
-- **Codelabs:** [Google Codelabs](https://codelabs.developers.google.com)
+### Primary Learning Resources
+- **[Topic 1 Documentation]:** [Link](https://example.com)
+- **[Topic 2 Documentation]:** [Link](https://example.com)
+- **[Topic 3 Documentation]:** [Link](https://example.com)
+- **[Topic 4 API Reference]:** [Link](https://example.com)
 
-### Key Topics
-- [Activities](https://developer.android.com/guide/components/activities)
-- [Services](https://developer.android.com/guide/components/services)
-- [Content Providers](https://developer.android.com/guide/topics/providers/content-providers)
-- [Broadcast Receivers](https://developer.android.com/guide/components/broadcasts)
-- [Fragment Guide](https://developer.android.com/guide/fragments)
-- [Layouts and Views](https://developer.android.com/guide/topics/ui/overview)
+### Sample Code & Tutorials
+- **[Framework Samples]:** [Link](https://example.com)
+- **[Learning Tutorials]:** [Link](https://example.com)
+- **[Code Examples Repository]:** [Link](https://example.com)
 
 ---
 
 ## Libraries & Frameworks
 
-### Networking
-- **Retrofit:** [Retrofit Documentation](https://square.github.io/retrofit/)
-- **OkHttp:** [OkHttp Guide](https://square.github.io/okhttp/)
-- **Volley:** [Android Volley](https://developer.android.com/training/volley)
+### Core Libraries
+- **[Library 1]:** [Documentation Link](https://example.com) - [Purpose/use case]
+- **[Library 2]:** [Documentation Link](https://example.com) - [Purpose/use case]
+- **[Library 3]:** [Documentation Link](https://example.com) - [Purpose/use case]
 
-### Database & Persistence
-- **Room:** [Room Persistence Library](https://developer.android.com/training/data-storage/room)
-- **SQLite:** [SQLite Official](https://www.sqlite.org)
-- **Firebase:** [Firebase Firestore](https://firebase.google.com/docs/firestore)
+### Utility Libraries
+- **[Library 4]:** [Link](https://example.com) - [Purpose/use case]
+- **[Library 5]:** [Link](https://example.com) - [Purpose/use case]
 
-### UI & Design
-- **Material Design:** [Material Design Guidelines](https://material.io)
-- **AndroidX:** [AndroidX Overview](https://developer.android.com/jetpack/androidx)
-- **Jetpack Compose:** [Compose Documentation](https://developer.android.com/jetpack/compose)
-
-### Asynchronous Programming
-- **Coroutines:** [Kotlin Coroutines Guide](https://kotlinlang.org/docs/coroutines-overview.html)
-- **RxJava:** [RxJava Documentation](https://github.com/ReactiveX/RxJava)
-- **LiveData:** [LiveData Overview](https://developer.android.com/topic/libraries/architecture/livedata)
+### Design & UI
+- **[Design System]:** [Link](https://example.com) - [Design patterns and guidelines]
+- **[Icon Library]:** [Link](https://example.com) - [Icons and graphics]
+- **[Component Library]:** [Link](https://example.com) - [Reusable UI components]
 
 ---
 
 ## Testing & Debugging
 
 ### Testing Frameworks
-- **JUnit:** [JUnit 4](https://junit.org/junit4/)
-- **Espresso:** [Espresso Testing Guide](https://developer.android.com/training/testing/espresso)
-- **Mockito:** [Mockito Documentation](https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html)
-- **Robolectric:** [Robolectric Guide](http://robolectric.org)
+- **[Testing Framework 1]:** [Documentation](https://example.com)
+- **[Testing Framework 2]:** [Documentation](https://example.com)
+- **[Mocking Library]:** [Documentation](https://example.com)
 
-### Debugging Tools
-- **Android Studio Debugger:** [Debug Your App](https://developer.android.com/studio/debug)
-- **Logcat:** [View Logs with Logcat](https://developer.android.com/studio/debug/logcat)
-- **Android Profiler:** [Profile Your App Performance](https://developer.android.com/studio/profile/android-profiler)
+### Debugging & Development Tools
+- **[Debugging Tool 1]:** [Documentation](https://example.com)
+- **[Profiling Tool]:** [Documentation](https://example.com)
+- **[Performance Analysis]:** [Documentation](https://example.com)
 
 ---
 
 ## APIs & Services
 
-### Google APIs
-- **Google Maps API:** [Maps Platform](https://cloud.google.com/maps-platform)
-- **Location Services:** [Google Play Services Location API](https://developers.google.com/maps/documentation/android-sdk/location)
-- **Firebase:** [Firebase Console](https://console.firebase.google.com)
+### Course-Specific APIs
+- **[API 1]:** [Documentation](https://example.com) - [Use case in course]
+- **[API 2]:** [Documentation](https://example.com) - [Use case in course]
+- **[API 3]:** [Documentation](https://example.com) - [Use case in course]
 
-### Public APIs
-- **Open Weather Map:** [API Documentation](https://openweathermap.org/api)
-- **REST Countries:** [API Documentation](https://restcountries.com)
-- **JSONPlaceholder:** [Fake API for Testing](https://jsonplaceholder.typicode.com)
+### Public APIs for Practice
+- **[Public API 1]:** [Documentation](https://example.com)
+- **[Public API 2]:** [Documentation](https://example.com)
+- **[Sandbox/Testing API]:** [Documentation](https://example.com)
 
 ---
 
 ## Learning Resources
 
 ### Online Courses & Tutorials
-- **Google Codelabs:** [Android Development Codelabs](https://codelabs.developers.google.com)
-- **Udacity:** [Developing Android Apps](https://www.udacity.com/course/developing-android-apps--ud853)
-- **Kotlin Documentation:** [Learn Kotlin](https://kotlinlang.org/docs/home.html)
+- **[Course Platform 1]:** [Link to course](https://example.com)
+- **[Tutorial Series]:** [Link](https://example.com)
+- **[Interactive Learning]:** [Link](https://example.com)
 
-### YouTube Channels
-- [Android Developers Channel](https://www.youtube.com/user/androiddevelopers)
-- [Google Developers Channel](https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw)
+### Video Learning
+- **[Official Channel]:** [Link](https://www.youtube.com)
+- **[Tutorial Playlist]:** [Link](https://www.youtube.com)
+- **[Conference Talks]:** [Link](https://example.com)
 
-### Books & References
-- "Android Programming: The Big Nerd Ranch Guide"
-- "Kotlin in Action"
-- "Android App Architecture Best Practices"
+### Recommended Books & Articles
+- "[Book Title 1]" - [Author/Publisher]
+- "[Book Title 2]" - [Author/Publisher]
+- "[Key Article/Paper]" - [Link](https://example.com)
 
 ---
 
 ## Design Resources
 
-### Material Design
-- **Material Design 3:** [Material Design System](https://m3.material.io)
-- **Color Tool:** [Material Color Tool](https://material.io/resources/color/)
-- **Icon Library:** [Material Icons](https://fonts.google.com/icons)
+### Design Systems & Guidelines
+- **[Design System Name]:** [Link](https://example.com)
+- **[Style Guide]:** [Link](https://example.com)
+- **[Design Pattern Library]:** [Link](https://example.com)
 
 ### Design Tools
-- **Figma:** [Figma](https://www.figma.com) - UI/UX Design
-- **Adobe XD:** [Adobe XD](https://www.adobe.com/products/xd.html)
-- **Sketch:** [Sketch](https://www.sketch.com)
+- **[Design Tool 1]:** [Link](https://example.com) - UI/UX Design
+- **[Design Tool 2]:** [Link](https://example.com)
+- **[Prototyping Tool]:** [Link](https://example.com)
 
 ---
 
-## Publishing & Distribution
+## Deployment & Distribution
 
-### Google Play Store
-- **Developer Console:** [Google Play Console](https://play.google.com/console)
-- **Publishing Guide:** [Publish Your App](https://developer.android.com/studio/publish)
-- **App Signing:** [Sign Your App](https://developer.android.com/studio/publish/app-signing)
+### Deployment Platforms
+- **[Platform 1]:** [Link](https://example.com) - [How to deploy projects]
+- **[Platform 2]:** [Link](https://example.com) - [How to deploy projects]
 
-### Alternative App Stores
-- **Amazon Appstore:** [Amazon Developer](https://developer.amazon.com)
-- **Samsung Galaxy Store:** [Samsung Developer](https://developer.samsung.com)
+### Documentation
+- **[Deployment Guide]:** [Link](https://example.com)
+- **[Best Practices]:** [Link](https://example.com)
 
 ---
 
 ## Community & Support
 
-- **Stack Overflow:** [Android Tag](https://stackoverflow.com/questions/tagged/android)
-- **Android Subreddit:** [r/androiddev](https://www.reddit.com/r/androiddev/)
-- **Google Groups:** [Android Developers Community](https://groups.google.com/g/android-developers)
-- **GitHub Discussions:** [Android Samples](https://github.com/android/samples/discussions)
+### Official Community
+- **[Official Forum/Discussion]:** [Link](https://example.com)
+- **[Official Chat/Discord]:** [Link](https://example.com)
+
+### General Community Resources
+- **Stack Overflow:** [Search for your topic](https://stackoverflow.com)
+- **[Subreddit/Community]:** [Link](https://reddit.com)
+- **[Discussion Forum]:** [Link](https://example.com)
+
+### Getting Help
+- See [Course Syllabus]({{ '/pages/syllabus/' | relative_url }}) for office hours
+- Email: {{ site.data.course-info.instructor.email }}
+- Check [FAQ]({{ '/pages/faq/' | relative_url }}) for common questions
 
 ---
+
+## Tips for Using These Resources
+
+1. **Start with Official Documentation** - Official docs are the most accurate and up-to-date
+2. **Use Multiple Sources** - Combine tutorials, documentation, and examples for better understanding
+3. **Practice with Code** - Don't just read; write code using these resources
+4. **Join Communities** - Ask questions and learn from peers
+5. **Bookmark Frequently Used Links** - Keep a personal list of your most useful resources
+
+---
+
+**How to Customize This Page:**
+
+1. Replace `[Tool Name X]` with actual tools used in your course
+2. Update all links to point to real resources
+3. Organize sections based on your course topics
+4. Add course-specific resources in each section
+5. Keep the page up-to-date as resources change
 
 **Last Updated:** January 28, 2026

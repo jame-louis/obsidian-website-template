@@ -1,24 +1,32 @@
+# ===========================================================================
+# COURSE ANNOUNCEMENTS TEMPLATE
+# ===========================================================================
+# Update these announcements for your specific course
+# ===========================================================================
+
 announcements:
-  - date: "2026-01-27"
-    title: "Welcome to Android Programming & Design!"
-    content: "Course begins today. Please review the syllabus and course schedule. Download Android Studio before our next class."
-    type: "important"
-    urgency: "high"
+  - date: "[Announcement date - YYYY-MM-DD]"
+    title: "[Announcement title - e.g., Welcome to the course!]"
+    content: "[Announcement content - What students need to know or do]"
+    type: "important"  # Options: important, reminder, update
+    urgency: "high"    # Options: high, medium, low
   
-  - date: "2026-02-01"
-    title: "Assignment 1 Due Tomorrow"
-    content: "Make sure your Android Studio environment is properly configured. Submit your verification through the course portal."
+  - date: "[Another announcement date]"
+    title: "[Assignment or deadline reminder]"
+    content: "[Details about the deadline or what's due]"
     type: "reminder"
     urgency: "medium"
 
 important_dates:
-  - date: "2026-01-27"
+  - date: "[Start date]"
     title: "Course Starts"
-  - date: "2026-03-16"
-    title: "Midterm Exam"
-  - date: "2026-03-23"
-    title: "Spring Break Begins"
-  - date: "2026-03-30"
-    title: "Spring Break Ends"
-  - date: "2026-05-16"
-    title: "Final Presentations & Course Ends"
+  - date: "[Important date 1]"
+    title: "[Event or deadline name]"
+  - date: "[Important date 2]"
+    title: "[Event or deadline name]"
+  - date: "[Important date 3]"
+    title: "[Event or deadline name]"
+  - date: "[Important date 4]"
+    title: "[Event or deadline name]"
+  - date: "[End date]"
+    title: "Course Ends or Final Deadline"

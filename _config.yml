@@ -1,16 +1,17 @@
 # Site settings
-title: Android Programming & Design Course
+title: Open Course Website
 email: instructor@example.com
 description: >-
-  Comprehensive course on Android programming and application design for college students.
-baseurl: "/android-course" # the subpath of your site, e.g. /blog
+  A customizable Jekyll-based course website template for educators.
+  Perfect for hosting course materials, lectures, assignments, and projects.
+baseurl: "/course-website" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Course settings
 course:
-  name: "Android Programming & Design"
+  name: "[Course Title]"
   semester: "Spring 2026"
-  institution: "Your University"
+  institution: "[Institution Name]"
   instructor: "Dr. [Your Name]"
   credits: 3
 

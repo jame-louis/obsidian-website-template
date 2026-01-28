@@ -1,49 +1,47 @@
-title: "Android Programming & Design"
-course_code: "CS 3001"
+title: "[Course Title]"
+course_code: "[CS XXXX]"
 semester: "Spring 2026"
 year: 2026
-institution: "Your University"
-department: "Computer Science"
+institution: "[Your University]"
+department: "[Department Name]"
 credits: 3
 level: "Intermediate"
 
 instructor:
   name: "Dr. [Your Name]"
   email: "instructor@example.com"
-  office: "Engineering Building, Room 301"
-  office_hours: "Tuesday & Thursday, 2:00 PM - 4:00 PM"
-  bio: "Dr. [Name] has [X] years of experience in Android development and mobile app design."
+  office: "[Building Name], Room [###]"
+  office_hours: "[Days and Times]"
+  bio: "Dr. [Name] has [X] years of experience in [subject area]."
 
 meeting:
   days: "Monday, Wednesday, Friday"
   time: "10:00 AM - 11:15 AM"
-  location: "Engineering Building, Room 205"
+  location: "[Building Name], Room [###]"
   duration_minutes: 75
 
 description: >-
-  This course introduces students to Android application development and design principles.
-  Students will learn the fundamentals of the Android platform, including Activities, Services,
-  Content Providers, and Broadcast Receivers. The course covers UI design with Layouts and
-  Fragments, data persistence, networking, and integration with device features like location
-  and sensors. Students will build several applications throughout the course, culminating in
-  a final project of their choice.
+  [Add your course description here. This should provide a brief overview of the course
+  topic, main concepts covered, and learning approach. Students will learn about [key topics]
+  and apply their knowledge through [assignments/projects/labs]. The course culminates in
+  [final project description].]
 
 learning_outcomes:
-  - "Understand the Android application architecture and lifecycle"
-  - "Design and implement user interfaces using XML layouts and Material Design principles"
-  - "Build data-driven applications using SQLite and Firebase"
-  - "Integrate Android apps with REST APIs and cloud services"
-  - "Implement location-based services and device sensors"
-  - "Deploy and publish Android applications to Google Play Store"
-  - "Apply software engineering best practices in mobile development"
+  - "[Student will be able to: describe specific learning outcome 1]"
+  - "[Student will be able to: describe specific learning outcome 2]"
+  - "[Student will be able to: describe specific learning outcome 3]"
+  - "[Student will be able to: describe specific learning outcome 4]"
+  - "[Student will be able to: describe specific learning outcome 5]"
+  - "[Student will be able to: describe specific learning outcome 6]"
+  - "[Student will be able to: describe specific learning outcome 7]"
 
 prerequisites:
-  - "Java Programming (CS 1003)"
-  - "Object-Oriented Design (CS 2001)"
-  - "Data Structures (CS 2010)"
+  - "[Prerequisite Course 1 (Course Code)]"
+  - "[Prerequisite Course 2 (Course Code)]"
+  - "[Prerequisite Course 3 (Course Code)]"
 
 textbook: null
-textbook_note: "Course materials are freely available online. No textbook purchase required."
+textbook_note: "Course materials are [freely available online / provided in course / to be announced]."
 
 grading:
   participation: 5
@@ -70,15 +68,15 @@ policies:
     content: "Students with disabilities should contact the disability services office for accommodations."
 
 required_software:
-  - name: "Android Studio"
-    version: "2024.1 or later"
-    link: "https://developer.android.com/studio"
-    cost: "Free"
-  - name: "Java Development Kit (JDK)"
-    version: "17 or later"
-    link: "https://www.oracle.com/java/technologies/downloads/"
-    cost: "Free"
-  - name: "Git"
-    version: "Latest"
-    link: "https://git-scm.com"
-    cost: "Free"
+  - name: "[Software Name 1]"
+    version: "[Version requirement]"
+    link: "[Link to download]"
+    cost: "[Cost information]"
+  - name: "[Software Name 2]"
+    version: "[Version requirement]"
+    link: "[Link to download]"
+    cost: "[Cost information]"
+  - name: "[Software Name 3]"
+    version: "[Version requirement]"
+    link: "[Link to download]"
+    cost: "[Cost information]"

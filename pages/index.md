@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Android Programming & Design Course"
+title: "Open Course Website Template"
 ---
 
 <div class="homepage">
     <section class="hero">
         <div class="hero-content">
             <h1>{{ site.course.name }}</h1>
-            <p class="tagline">Learn to build beautiful, functional Android applications</p>
+            <p class="tagline">Course materials, lectures, and resources</p>
             <p class="course-meta">
                 {{ site.course.semester }} | {{ site.course.institution }}<br>
                 Instructor: {{ site.data.course-info.instructor.name }}
@@ -29,13 +29,13 @@ title: "Android Programming & Design Course"
             
             <div class="info-card">
                 <h3>📅 Course Schedule</h3>
-                <p>16-week course meeting MWF from 10:00 AM to 11:15 AM</p>
+                <p>{{ site.data.schedule.total_weeks }}-week course with weekly meetings and assignments</p>
                 <a href="{{ '/pages/schedule/' | relative_url }}" class="card-link">Full schedule →</a>
             </div>
             
             <div class="info-card">
                 <h3>🎓 Learning Outcomes</h3>
-                <p>Master Android app development from basics to advanced topics</p>
+                <p>Comprehensive learning objectives and competencies developed in this course</p>
                 <a href="{{ '/pages/syllabus/#learning-outcomes' | relative_url }}" class="card-link">View all →</a>
             </div>
             
@@ -87,7 +87,7 @@ title: "Android Programming & Design Course"
             
             <a href="{{ '/pages/resources/' | relative_url }}" class="link-card">
                 <h3>🔗 Resources</h3>
-                <p>Tools, APIs, and documentation</p>
+                <p>Tools, references, and documentation</p>
             </a>
         </div>
     </section>
