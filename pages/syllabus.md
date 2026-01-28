@@ -1,41 +1,41 @@
+title: "Syllabus"
 ---
 layout: course-page
-title: "Syllabus"
+title: "教学大纲"
 permalink: /pages/syllabus/
 ---
 
-## Course Information
+## 课程信息
 
-**Course Title:** {{ site.data.course-info.title }}  
-**Course Code:** {{ site.data.course-info.course_code }}  
-**Semester:** {{ site.data.course-info.semester }}  
-**Credits:** {{ site.data.course-info.credits }}  
-**Level:** {{ site.data.course-info.level }}  
-**Institution:** {{ site.data.course-info.institution }}  
+- **课程名称：** {{ site.data.course-info.title }}  
+- **课程代码：** {{ site.data.course-info.course_code }}  
+- **学期：** {{ site.data.course-info.semester }} {{ site.data.course-info.year }}  
+- **学分：** {{ site.data.course-info.credits }}  
+- **难度等级：** {{ site.data.course-info.level }}  
+- **授课单位：** {{ site.data.course-info.institution }}  
 
-### Instructor
+### 授课教师
 
-**Name:** {{ site.data.course-info.instructor.name }}  
-**Email:** [{{ site.data.course-info.instructor.email }}](mailto:{{ site.data.course-info.instructor.email }})  
-**Office:** {{ site.data.course-info.instructor.office }}  
-**Office Hours:** {{ site.data.course-info.instructor.office_hours }}  
+- **姓名：** {{ site.data.course-info.instructor.name }}  
+- **邮箱：** [{{ site.data.course-info.instructor.email }}](mailto:{{ site.data.course-info.instructor.email }})  
+- **办公地点：** {{ site.data.course-info.instructor.office }}  
+- **办公时间：** {{ site.data.course-info.instructor.office_hours }}  
 
-### Meeting Times
+### 上课时间与地点
 
-**Days:** {{ site.data.course-info.meeting.days }}  
-**Time:** {{ site.data.course-info.meeting.time }}  
-**Location:** {{ site.data.course-info.meeting.location }}  
-**Duration:** {{ site.data.course-info.meeting.duration_minutes }} minutes per class  
+- **上课日：** {{ site.data.course-info.meeting.days }}  
+- **上课时间：** {{ site.data.course-info.meeting.time }}  
+- **地点：** {{ site.data.course-info.meeting.location }}  
 
 ---
 
-## Course Description
+## 课程简介
 
 {{ site.data.course-info.description }}
 
 ---
 
-## Prerequisites
+## 先修要求
 
 {% for prereq in site.data.course-info.prerequisites %}
 - {{ prereq }}
@@ -43,9 +43,9 @@ permalink: /pages/syllabus/
 
 ---
 
-## Learning Outcomes
+## 学习目标
 
-Upon successful completion of this course, students will be able to:
+完成本课程后，学生应能够：
 
 {% for outcome in site.data.course-info.learning_outcomes %}
 - {{ outcome }}
@@ -53,93 +53,90 @@ Upon successful completion of this course, students will be able to:
 
 ---
 
-## Required Software & Materials
+## 所需软件与教材
 
-### Software
+### 软件
 
-| Tool | Version | Link | Cost |
-|------|---------|------|------|
+| 工具 | 版本 | 链接 | 费用 |
+|------|------:|------|------|
 {% for tool in site.data.course-info.required_software %}
-| {{ tool.name }} | {{ tool.version }} | [Download]({{ tool.link }}) | {{ tool.cost }} |
+| {{ tool.name }} | {{ tool.version }} | [下载]({{ tool.link }}) | {{ tool.cost }} |
 {% endfor %}
 
-### Textbooks
+### 教材与参考
 
 {{ site.data.course-info.textbook_note }}
 
 ---
 
-## Grading
+## 评分方式
 
-### Grade Components
+| 项目 | 权重 (%) |
+|------|---------:|
+| 课堂参与 | {{ site.data.course-info.grading.participation }} |
+| 小作业 | {{ site.data.course-info.grading.homework }} |
+| 课后作业 | {{ site.data.course-info.grading.assignments }} |
+| 项目 | {{ site.data.course-info.grading.projects }} |
+| 期末/最终项目 | {{ site.data.course-info.grading.final_project }} |
 
-| Component | Percentage |
-|-----------|-----------|
-| Participation | 5% |
-| Homework | 15% |
-| Assignments | 20% |
-| Projects | 40% |
-| Final Project | 20% |
+### 评分等级
 
-### Grading Scale
-
-| Grade | Range |
-|-------|-------|
+| 等级 | 分数范围 |
+|------|--------:|
 | A | 90-100 |
 | B | 80-89 |
 | C | 70-79 |
 | D | 60-69 |
-| F | Below 60 |
+| F | 低于 60 |
 
 ---
 
-## Course Policies
+## 课程政策
 
-### Attendance Policy
+### 出勤政策
 {{ site.data.course-info.policies[0].content }}
 
-### Late Work Policy
+### 迟交作业
 {{ site.data.course-info.policies[1].content }}
 
-### Academic Integrity
+### 学术诚信
 {{ site.data.course-info.policies[2].content }}
 
-### Accessibility
+### 无障碍服务
 {{ site.data.course-info.policies[3].content }}
 
 ---
 
-## Course Schedule
+## 教学日程
 
-For the detailed week-by-week schedule, including topics, deadlines, and milestones, 
-please see the [Course Schedule]({{ '/pages/schedule/' | relative_url }}).
+详细逐周安排见 [课程日程]({{ '/pages/schedule/' | relative_url }})。
 
-**Important Dates:**
-- **Course Begins:** {{ site.data.schedule.weeks[0].start_date | date: "%B %d, %Y" }}
-- **Midterm Exam:** Week 7
-- **Spring Break:** March 23 - March 30
-- **Final Presentations:** {{ site.data.schedule.weeks[15].start_date | date: "%B %d, %Y" }}
-- **Course Ends:** {{ site.data.schedule.weeks[15].end_date | date: "%B %d, %Y" }}
+**重要日期示例（请在 `_data/schedule.yml` 中更新）：**
+- **课程开始：** {{ site.data.schedule.weeks[0].start_date }}
+- **中期考试：** 第 7 周
+- **期末汇报：** {{ site.data.schedule.weeks[15].start_date }}
+- **课程结束：** {{ site.data.schedule.weeks[15].end_date }}
 
 ---
 
-## Communication
+## 沟通
 
-**Course Website:** This course website contains all materials and updates.  
-**Email:** For questions, email the instructor at [{{ site.data.course-info.instructor.email }}](mailto:{{ site.data.course-info.instructor.email }})  
-**Office Hours:** {{ site.data.course-info.instructor.office_hours }} in {{ site.data.course-info.instructor.office }}  
-**Response Time:** Emails will be answered within 24 hours (48 hours on weekends)
+课程网站包含所有课程资料与更新。遇到问题请通过邮箱联系授课教师： [{{ site.data.course-info.instructor.email }}](mailto:{{ site.data.course-info.instructor.email }})。
+
+办公时间：{{ site.data.course-info.instructor.office_hours }}（详见课程大纲）
+
+响应时间：工作日内通常 24 小时内回复，周末或节假日可能延迟。
 
 ---
 
-## Accommodations for Students with Disabilities
+## 无障碍与支持
 
 {{ site.data.course-info.policies[3].content }}
 
-Contact your university's disability services office for more information.
+若需额外帮助，请联系学校无障碍服务或授课教师。
 
 ---
 
-## Disclaimer
+## 免责声明
 
-This syllabus is subject to change at the instructor's discretion. Students will be notified of any significant changes.
+教学大纲可能会在学期中根据教学需要进行调整，若有重大变更将及时通知学生。
