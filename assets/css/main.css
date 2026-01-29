@@ -248,10 +248,33 @@ pre code {
 .nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
     transform: rotate(-45deg) translate(10px, -10px);
 }
-
 .site-branding a:hover {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none;
+}
+
+/* Responsive media for media elements */
+img, picture, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Respect user reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* Footer */
@@ -561,6 +584,9 @@ li {
         padding: 1rem 0;
         z-index: 99;
         box-shadow: var(--shadow-md);
+        max-height: calc(100vh - var(--nav-height, 70px));
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-menu ul {
@@ -573,7 +599,7 @@ li {
     }
 
     .nav-menu li {
-        border-bottom: 1px solid rgba(79, 70, 229, 0.1);
+        border-bottom: 1px solid rgba(79, 70, 229, 0.06);
     }
 
     .nav-menu li:last-child {
@@ -593,6 +619,8 @@ li {
         align-items: center;
         min-height: 48px;
         justify-content: flex-start;
+        font-size: 1.05rem;
+        touch-action: manipulation;
     }
 
     .nav-link:hover {
@@ -605,6 +633,20 @@ li {
         padding-left: calc(1.5rem - 4px);
         background-color: rgba(79, 70, 229, 0.1);
         border-bottom: none;
+    }
+
+    /* Make primary buttons full-width on mobile for easier tapping */
+    .btn {
+        display: block;
+        width: calc(100% - 2rem);
+        margin: 0.5rem auto;
+        box-sizing: border-box;
+        min-height: 48px;
+    }
+
+    /* Slightly increase base touch spacing for small screens */
+    .info-card, .card {
+        padding: 1rem;
     }
 
     .footer-content {

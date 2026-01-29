@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
         navToggle.addEventListener('click', function() {
             const isOpen = navMenu.classList.toggle('open');
             navToggle.setAttribute('aria-expanded', isOpen);
+            // Lock body scroll when menu opens
+            if (isOpen) {
+                document.body.classList.add('menu-open');
+            } else {
+                document.body.classList.remove('menu-open');
+            }
         });
         
         // Close menu when a link is clicked
@@ -15,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('open');
                 navToggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
             });
         });
         
@@ -23,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
                 navMenu.classList.remove('open');
                 navToggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
             }
         });
 
@@ -31,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (event.key === 'Escape' && navMenu.classList.contains('open')) {
                 navMenu.classList.remove('open');
                 navToggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
                 navToggle.focus();
             }
         });
