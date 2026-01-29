@@ -1,7 +1,7 @@
 <footer class="site-footer">
     <div class="footer-content">
         <div class="footer-section">
-            <h3>Course Info</h3>
+            <h3>课程信息</h3>
             <p>
                 <strong>{{ site.course.name }}</strong><br>
                 {{ site.course.semester }}<br>
@@ -10,7 +10,7 @@
         </div>
         
         <div class="footer-section">
-            <h3>Instructor</h3>
+            <h3>授课教师</h3>
             <p>
                 {{ site.data.course-info.instructor.name }}<br>
                 <a href="mailto:{{ site.data.course-info.instructor.email }}">
@@ -21,17 +21,17 @@
         </div>
         
         <div class="footer-section">
-            <h3>Quick Links</h3>
+            <h3>快速链接</h3>
             <ul>
-                <li><a href="{{ '/pages/syllabus/' | relative_url }}">Syllabus</a></li>
-                <li><a href="{{ '/pages/schedule/' | relative_url }}">Schedule</a></li>
-                <li><a href="{{ '/pages/resources/' | relative_url }}">Resources</a></li>
-                <li><a href="{{ '/pages/faq/' | relative_url }}">FAQ</a></li>
+                <li><a href="{{ '/pages/syllabus/' | relative_url }}">教学大纲</a></li>
+                <li><a href="{{ '/pages/schedule/' | relative_url }}">课程日程</a></li>
+                <li><a href="{{ '/pages/resources/' | relative_url }}">资源</a></li>
+                <li><a href="{{ '/pages/faq/' | relative_url }}">常见问题</a></li>
             </ul>
         </div>
     </div>
     
     <div class="footer-bottom">
-        <p>&copy; {{ site.time | date: "%Y" }} {{ site.course.institution }}. All rights reserved.</p>
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.course.institution }}。保留所有权利。</p>
     </div>
 </footer>

@@ -1,5 +1,7 @@
 # Site settings
-title: Open Course Website
+lang: zh-CN
+locale: zh_CN
+title: 公共课程网站
 email: instructor@example.com
 description: >-
   A customizable Jekyll-based course website template for educators.
