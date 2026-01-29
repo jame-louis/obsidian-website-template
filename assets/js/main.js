@@ -91,3 +91,24 @@ function generateTableOfContents() {
 document.addEventListener('DOMContentLoaded', function() {
     generateTableOfContents();
 });
+
+// IntersectionObserver: reveal on scroll
+function setupRevealOnScroll() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    setupRevealOnScroll();
+    // small hover motion for primary buttons
+    document.querySelectorAll('.btn-primary').forEach(btn => {
+        btn.addEventListener('mouseenter', () => btn.animate([{ transform: 'translateY(-2px)' }, { transform: 'translateY(0)' }], { duration: 220, easing: 'cubic-bezier(.2,.9,.2,1)' }));
+    });
+});
