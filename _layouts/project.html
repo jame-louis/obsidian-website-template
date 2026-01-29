@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="project-page">
-    <div class="project-header">
+    <div class="project-header reveal">
         <div class="breadcrumb">
-            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/' | relative_url }}">主页</a>
             <span>/</span>
-            <a href="{{ '/projects/' | relative_url }}">Projects</a>
+            <a href="{{ '/projects/' | relative_url }}">项目</a>
             <span>/</span>
             <span>{{ page.title }}</span>
         </div>
@@ -21,31 +21,31 @@ layout: default
         <div class="project-meta">
             {% if page.number %}
             <span class="meta-item">
-                <strong>Project:</strong> #{{ page.number }}
+                <strong>项目：</strong> #{{ page.number }}
             </span>
             {% endif %}
             
             {% if page.difficulty %}
             <span class="meta-item difficulty-{{ page.difficulty | downcase }}">
-                <strong>Difficulty:</strong> {{ page.difficulty }}
+                <strong>难度：</strong> {{ page.difficulty }}
             </span>
             {% endif %}
             
             {% if page.duration %}
             <span class="meta-item">
-                <strong>Duration:</strong> {{ page.duration }}
+                <strong>耗时：</strong> {{ page.duration }}
             </span>
             {% endif %}
             
             {% if page.team_size %}
             <span class="meta-item">
-                <strong>Team Size:</strong> {{ page.team_size }}
+                <strong>团队规模：</strong> {{ page.team_size }}
             </span>
             {% endif %}
             
             {% if page.due_date %}
             <span class="meta-item due-date">
-                <strong>Due:</strong> {{ page.due_date | date: "%B %d, %Y" }}
+                <strong>截止日期：</strong> {{ page.due_date | date: "%Y-%m-%d" }}
             </span>
             {% endif %}
         </div>

@@ -1,5 +1,6 @@
 /* Import Chinese-friendly web font (Noto Sans SC) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
 
 /* CSS Variables - redesigned palette */
 :root {
@@ -52,24 +53,27 @@ a:hover {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    line-height: 1.3;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+    line-height: 1.15;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    font-family: 'ZCOOL QingKe HuangYou', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.6px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
+    font-size: 2.6rem;
+    color: var(--text-color);
+    line-height: 1.05;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: var(--text-color);
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
 }
 
 p {
@@ -444,6 +448,15 @@ th {
     transform: translateY(-6px) rotate(-6deg);
     filter: blur(6px);
     transition: transform 0.9s cubic-bezier(.2,.9,.2,1), opacity 0.6s;
+    animation: floatBlob 6s ease-in-out infinite;
+}
+
+@keyframes floatBlob {
+    0% { transform: translateY(-6px) rotate(-6deg) scale(1); opacity: 0.95; }
+    25% { transform: translateY(-12px) rotate(-4deg) scale(1.02); }
+    50% { transform: translateY(-6px) rotate(-6deg) scale(1); }
+    75% { transform: translateY(-2px) rotate(-8deg) scale(0.98); }
+    100% { transform: translateY(-6px) rotate(-6deg) scale(1); opacity: 0.95; }
 }
 
 /* Info grid tweaks */
@@ -452,8 +465,22 @@ th {
 .info-card:hover { transform: translateY(-6px); box-shadow: 0 8px 24px rgba(34,40,49,0.06); }
 
 /* Reveal animations */
-.reveal { opacity: 0; transform: translateY(8px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal { opacity: 0; transform: translateY(12px) scale(.995); transition: opacity 0.6s cubic-bezier(.2,.9,.2,1), transform 0.6s cubic-bezier(.2,.9,.2,1), box-shadow 0.4s ease; will-change: opacity, transform; }
 .reveal.is-visible { opacity: 1; transform: none; }
+
+/* Stagger-friendly variable — JS will set inline transition-delay on elements */
+.reveal[data-delay] { transition-delay: var(--reveal-delay, 0ms); }
+
+/* Button micro-interactions */
+.btn-primary { transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms; }
+.btn-primary:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 32px rgba(10,102,194,0.12); }
+
+/* Gradient shift on hover */
+.btn-primary {
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+}
+.btn-primary:hover { background-position: 100% 50%; }
 
 /* Hero typography adjustments */
 .hero-title { font-size: 2rem; margin-bottom: 0.5rem; }

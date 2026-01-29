@@ -94,15 +94,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // IntersectionObserver: reveal on scroll
 function setupRevealOnScroll() {
+    const reveals = Array.from(document.querySelectorAll('.reveal'));
+
+    // assign a gentle stagger delay so content reveals feel orchestrated
+    reveals.forEach((el, i) => {
+        const ms = i * 90; // 90ms step
+        el.style.setProperty('--reveal-delay', ms + 'ms');
+        el.setAttribute('data-delay', ms);
+    });
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.12 });
 
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    reveals.forEach(el => observer.observe(el));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -111,4 +121,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.btn-primary').forEach(btn => {
         btn.addEventListener('mouseenter', () => btn.animate([{ transform: 'translateY(-2px)' }, { transform: 'translateY(0)' }], { duration: 220, easing: 'cubic-bezier(.2,.9,.2,1)' }));
     });
+
+    // subtle parallax effect for hero blob on mouse move
+    const hero = document.querySelector('.hero');
+    const blob = document.querySelector('.hero-blob');
+    if (hero && blob) {
+        hero.addEventListener('mousemove', (e) => {
+            const rect = hero.getBoundingClientRect();
+            const px = (e.clientX - rect.left) / rect.width - 0.5;
+            const py = (e.clientY - rect.top) / rect.height - 0.5;
+            blob.style.transform = `translateY(${ -6 + py * 8 }px) rotate(${ -6 + px * 6 }deg) scale(1.01)`;
+        });
+        hero.addEventListener('mouseleave', () => {
+            blob.style.transform = '';
+        });
+    }
 });

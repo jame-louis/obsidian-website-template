@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="assignment-page">
-    <div class="assignment-header">
+    <div class="assignment-header reveal">
         <div class="breadcrumb">
-            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/' | relative_url }}">主页</a>
             <span>/</span>
-            <a href="{{ '/assignments/' | relative_url }}">Assignments</a>
+            <a href="{{ '/assignments/' | relative_url }}">作业</a>
             <span>/</span>
             <span>{{ page.title }}</span>
         </div>
@@ -17,25 +17,25 @@ layout: default
         <div class="assignment-meta">
             {% if page.week %}
             <span class="meta-item">
-                <strong>Week:</strong> {{ page.week }}
+                <strong>周次：</strong> {{ page.week }}
             </span>
             {% endif %}
             
             {% if page.due_date %}
             <span class="meta-item due-date">
-                <strong>Due:</strong> {{ page.due_date | date: "%B %d, %Y at %I:%M %p" }}
+                <strong>截止日期：</strong> {{ page.due_date | date: "%Y-%m-%d" }}
             </span>
             {% endif %}
             
             {% if page.submission_type %}
             <span class="meta-item">
-                <strong>Submission:</strong> {{ page.submission_type }}
+                <strong>提交方式：</strong> {{ page.submission_type }}
             </span>
             {% endif %}
             
             {% if page.points %}
             <span class="meta-item points">
-                <strong>Points:</strong> {{ page.points }}
+                <strong>分数：</strong> {{ page.points }}
             </span>
             {% endif %}
         </div>
