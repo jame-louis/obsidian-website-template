@@ -8,19 +8,19 @@
         </div>
         
         <nav class="site-nav">
-            <button class="nav-toggle" id="navToggle" aria-label="切换导航">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="nav-toggle" id="navToggle" aria-label="切换导航" aria-expanded="false" aria-controls="navMenu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
             </button>
             
             <div class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="{{ '/' | relative_url }}">主页</a></li>
-                    <li><a href="{{ '/lectures/' | relative_url }}">讲义</a></li>
-                    <li><a href="{{ '/assignments/' | relative_url }}">作业</a></li>
-                    <li><a href="{{ '/resources/' | relative_url }}">资源</a></li>
-                    <li><a href="{{ '/faq/' | relative_url }}">常见问题</a></li>
+                    <li><a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} is-active{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>主页</a></li>
+                    <li><a href="{{ '/lectures/' | relative_url }}" class="nav-link{% if page.collection == 'lectures' %} is-active{% endif %}" {% if page.collection == 'lectures' %}aria-current="page"{% endif %}>讲义</a></li>
+                    <li><a href="{{ '/assignments/' | relative_url }}" class="nav-link{% if page.collection == 'assignments' %} is-active{% endif %}" {% if page.collection == 'assignments' %}aria-current="page"{% endif %}>作业</a></li>
+                    <li><a href="{{ '/resources/' | relative_url }}" class="nav-link{% if page.url == '/resources/' %} is-active{% endif %}" {% if page.url == '/resources/' %}aria-current="page"{% endif %}>资源</a></li>
+                    <li><a href="{{ '/faq/' | relative_url }}" class="nav-link{% if page.url == '/faq/' %} is-active{% endif %}" {% if page.url == '/faq/' %}aria-current="page"{% endif %}>常见问题</a></li>
                 </ul>
             </div>
         </nav>
